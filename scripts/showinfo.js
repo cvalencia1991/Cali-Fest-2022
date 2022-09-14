@@ -1,17 +1,14 @@
-function deploymenu(){
-    const menubar= document.getElementById('menubar')
-    menubar.style.display='block';
+function deploymenu() {
+  const menubar = document.getElementById('menubar');
+  menubar.style.display = 'block';
 }
-document.getElementById('deploy-menu').addEventListener('click',deploymenu);
+document.getElementById('deploy-menu').addEventListener('click', deploymenu);
 
-function closemenu(){
-    const menubar= document.getElementById('menubar');
-    menubar.style.display='none';
+function closemenu() {
+  const menubar = document.getElementById('menubar');
+  menubar.style.display = 'none';
 }
-document.getElementById('closebutton').addEventListener('click',closemenu);
-
-
-
+document.getElementById('closebutton').addEventListener('click', closemenu);
 
 /* button Showmore */
 /* function showmore(){
@@ -46,7 +43,5 @@ document.getElementById('closebutton').addEventListener('click',closemenu);
     card4.style.cssText=`
         display: flex !important
     `;
-
-
 
 } */

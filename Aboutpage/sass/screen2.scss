@@ -8,7 +8,7 @@
 $Mobile:768px;
 $desktop:768px;
 
-@include font-face("lattoMedium",font-files("Lato-Medium.ttf"));
+@include font-face("lattoMedium",font-files('Lato-Medium.ttf'));
 @include font-face("CocogooseProItalic",font-files("CocogooseProSemilight-trial.ttf"));
 @include font-face("lattoligth",font-files("Lato-Light.ttf"));
 @include font-face("lattoheavy",font-files("Lato-HeavyItalic.ttf"));
@@ -61,7 +61,7 @@ $desktop:768px;
         background: #d6d6d6;
         color: #ec5242;
         position: fixed;
-        font-family: "lattoMedium";
+        font-family: Lato, sans-serif;
         font-size: x-large;
 
         .closemenu {
