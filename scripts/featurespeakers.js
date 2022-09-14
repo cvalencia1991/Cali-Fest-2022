@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable guard-for-in */
 /* eslint-disable no-undef */
 const speakers = [
   {
@@ -38,7 +40,6 @@ const speakers = [
   },
 ];
 function speakersection() {
-  // eslint-disable-next-line no-restricted-syntax, guard-for-in
   for (talker in speakers) {
     const speakerp = speakers[talker].name;
     const imagespeaker = speakers[talker].imgspkeaker;
