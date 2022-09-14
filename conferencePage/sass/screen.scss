@@ -1,0 +1,702 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/font-face";
+
+$Mobile:768px;
+$desktop:768px;
+
+@font-face {
+  font-family: "lattoMedium";
+  src: url('../fonts/Lato-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @include font-face("lattoMedium",font-files('Lato-Medium.ttf')); */
+@include font-face("CocogooseProItalic",font-files("CocogooseProSemilight-trial.ttf"));
+@include font-face("lattoligth",font-files("Lato-Light.ttf"));
+@include font-face("lattoheavy",font-files("Lato-HeavyItalic.ttf"));
+
+/* *{
+  border: 2px solid red !important;
+} */
+@media screen and (max-width: $Mobile) {
+  .showcontent {
+    display: none !important;
+  }
+
+  /*   #show2, #card1, #card2, #card3, #card4{
+    display: none !important;
+  } */
+
+  .styleheader {
+    background: #dad6d6ca;
+
+    .navbarstyles {
+      background-color: white;
+      flex-direction: row;
+      display: flex;
+      height: 68px;
+
+      .Hamburgermenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 10px;
+        width: 37px;
+      }
+
+      .stylelogo1 {
+        display: none;
+      }
+
+      .menunavbar {
+        display: none;
+        width: 100%;
+        gap: 2em;
+        height: 100%;
+        padding: 2em;
+        left: 0;
+        background: #d6d6d6;
+        color: #ec5242;
+        position: fixed;
+        font-family: 'lattoMedium';
+        font-size: x-large;
+
+        .closemenu {
+          top: 1em;
+          flex-direction: row;
+          right: 1em;
+          position: fixed;
+        }
+
+        li {
+          padding: 1em;
+        }
+      }
+
+      .hiddenMobile {
+        display: none;
+      }
+    }
+
+    .TittleConference {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 400px;
+
+      .titleheader1 {
+        font-family: "lattoMedium";
+        font-size: 2em;
+        color: #ec5242;
+      }
+
+      .titleheader2 {
+        font-family: "CocogooseProItalic";
+        font-size: 1.8em;
+        font-weight: 800;
+        color: #ec5242;
+      }
+
+      .titleheader3 {
+        font-family: "lattoMedium";
+        font-size: 1.8em;
+        color: #ec5242;
+      }
+
+      .introduction {
+        padding: 5px;
+        font-size: smaller;
+        border: 1px solid white;
+        font-family: "lattoligth";
+        text-align: justify;
+        margin-top: 20px;
+      }
+
+      .tittledate {
+        font-family: "lattoheavy";
+        font-size: 1.8em;
+        color: #272a31;
+        padding-top: 20px;
+      }
+
+      .tittlesite {
+        font-family: "lattoligth";
+        font-size: small;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .mainprogram {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #272a31;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      padding-bottom: 0;
+      color: white;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+      margin: 10px;
+    }
+
+    .wrapper {
+      display: grid;
+      justify-items: start;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .program {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 10px;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-content: center;
+        gap: 1em;
+        background: rgba(202, 200, 200, 0.1);
+
+        .stylelogoprograms {
+          width: 50px;
+        }
+
+        .headprogram {
+          color: #ec5242;
+          width: 160px;
+          text-align: initial;
+        }
+
+        .infomationprogram1 {
+          display: flex;
+        }
+      }
+    }
+
+    .joinSummit {
+      background-color: #ec5242;
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 2em;
+      border: #ec5242;
+      font-family: "lattoligth";
+      font-size: unset;
+    }
+
+    .linkprogram {
+      display: none;
+    }
+  }
+
+  .featuredspeakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: black;
+      align-items: center;
+      font-size: medium;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper2 {
+      #showcontent {
+        display: none;
+      }
+
+      .cardspeaker {
+        display: flex;
+        flex-direction: row;
+        gap: 0.9em;
+        padding: 1em;
+
+        .speakerstyle {
+          width: 7em;
+        }
+
+        .speaker {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 3px;
+
+          .namespeaker {
+            font-family: "lattoMedium";
+            color: black;
+            font-size: larger;
+            font-weight: 700;
+          }
+
+          .studyies {
+            font-family: "lattoMedium";
+            color: #ec5242;
+            font-size: x-small;
+          }
+
+          .line2 {
+            background: #d3d3d3;
+            height: 1px;
+            width: 30px;
+          }
+
+          .topic {
+            font-family: "lattoMedium";
+            font-size: x-small;
+          }
+        }
+      }
+    }
+
+    .stylebutton {
+      background-color: white;
+      padding: 20px;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid #d3d3d3;
+      margin: 1em;
+      width: 368px;
+      font-family: "lattoligth";
+      justify-content: center;
+      font-size: unset;
+      gap: 1em;
+
+      .stylearrow {
+        width: 10px;
+      }
+    }
+  }
+
+  .partnership {
+    display: flex;
+    justify-content: center;
+    background: rgb(39, 42, 49);
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram3 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      padding-bottom: 0;
+      color: white;
+      font-size: x-large;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper3 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .stylelogpartnership {
+        width: 8em;
+        float: left;
+      }
+    }
+  }
+
+  .licensestyle {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #d3d3d3;
+    gap: 1em;
+
+    .imagestylelicense {
+      width: 8em;
+    }
+
+    .styleinfo {
+      font-family: "lattoMedium";
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .styleheader {
+    background: #dad6d6ca;
+
+    .navbarstyles {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .Hamburgermenu {
+        display: none;
+      }
+
+      .headstyle {
+        display: flex;
+
+        .stylelogo1 {
+          width: 140px;
+          margin-right: 10em;
+          margin-left: 10em;
+        }
+      }
+
+      .menunavbar {
+        list-style: none;
+        color: #272a31;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        gap: 3em;
+        font-family: 'lattoMedium';
+
+        .closemenu {
+          display: none;
+        }
+
+        .styleaboutlink {
+          cursor: pointer;
+          color: black;
+          animation-name: aboutbutton;
+          animation-duration: 3s;
+          animation-delay: 2s;
+
+          &:hover {
+            color: #ec5242;
+          }
+        }
+      }
+
+      .hiddenDesktop {
+        display: none;
+      }
+
+      .CCcampain {
+        border: 2px solid #ec5242;
+        padding: 10px;
+      }
+    }
+
+    .TittleConference {
+      display: flex;
+      padding-left: 20em;
+      padding-top: 6em;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      height: 35em;
+
+      .titleheader1 {
+        font-family: "lattoMedium";
+        font-size: 2em;
+        color: #ec5242;
+      }
+
+      .titleheader2 {
+        font-family: "CocogooseProItalic";
+        font-size: 4em;
+        color: #ec5242;
+        width: 800px;
+      }
+
+      .titleheader3 {
+        font-family: "lattoMedium";
+        font-size: 4em;
+        color: #ec5242;
+      }
+
+      .introduction {
+        padding: 15px;
+        width: 593px;
+        font-family: "lattoligth";
+        border: 1px solid white;
+        text-align: inherit;
+        font-size: smaller;
+        margin-top: 20px;
+      }
+
+      .tittledate {
+        font-family: "lattoheavy";
+        color: #272a31;
+        font-size: xx-large;
+        margin-top: 10px;
+      }
+
+      .tittlesite {
+        font-family: "lattoligth";
+        font-size: larger;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .mainprogram {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+    height: 500px;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: white;
+      font-size: x-large;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper {
+      display: flex;
+      place-items: center;
+      flex-direction: row;
+      gap: 1px;
+      padding-top: 6em;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-left: 15em;
+      margin-right: 15em;
+
+      .program {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-content: center;
+        gap: 5px;
+        background: rgba(202, 200, 200, 0.1);
+
+        .stylelogoprograms {
+          width: 50px;
+        }
+
+        .headprogram {
+          text-align: center;
+          color: rgb(236, 82, 66);
+          width: 160px;
+        }
+
+        .infomationprogram1 {
+          text-align: center;
+        }
+      }
+    }
+
+    .joinSummit {
+      display: none;
+    }
+
+    .linkprogram {
+      color: white;
+      font-family: "lattoligth";
+      text-decoration: underline;
+      padding: 3em;
+    }
+  }
+
+  .featuredspeakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: black;
+      font-size: x-large;
+      align-items: center;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper2 {
+      display: grid;
+      grid-template-columns: 30% 30%;
+      justify-content: center;
+      justify-items: center;
+      gap: 1em;
+
+      #showcontent {
+        display: none;
+      }
+
+      .cardspeaker {
+        display: flex;
+        flex-direction: row;
+        gap: 0.9em;
+        padding: 1em;
+
+        .speakerstyle {
+          width: 7em;
+        }
+
+        .speaker {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          .namespeaker {
+            font-family: "lattoMedium";
+            color: black;
+            font-size: larger;
+            font-weight: 700;
+          }
+
+          .studyies {
+            font-family: "lattoMedium";
+            color: #ec5242;
+            font-size: x-small;
+          }
+
+          .line2 {
+            background: #d3d3d3;
+            height: 1px;
+            width: 30px;
+          }
+
+          .topic {
+            font-family: "lattoMedium";
+          }
+        }
+      }
+    }
+
+    .stylebutton {
+      background-color: white;
+      padding: 20px;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid #d3d3d3;
+      margin: 1em;
+      width: 368px;
+      font-family: "lattoligth";
+      justify-content: center;
+      font-size: unset;
+      gap: 1em;
+
+      .stylearrow {
+        width: 10px;
+      }
+    }
+  }
+
+  .partnership {
+    display: flex;
+    justify-content: center;
+    background: rgb(39, 42, 49);
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram3 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      padding-bottom: 0;
+      color: white;
+      font-size: x-large;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper3 {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+
+      .stylelogpartnership {
+        width: 10em;
+      }
+    }
+  }
+
+  .licensestyle {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    background: #d3d3d3;
+
+    .imagestylelicense {
+      width: 10em;
+    }
+  }
+}

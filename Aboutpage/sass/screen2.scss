@@ -1,0 +1,570 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+@import "compass/css3";
+
+$Mobile:768px;
+$desktop:768px;
+
+@include font-face("lattoMedium",font-files("Lato-Medium.ttf"));
+@include font-face("CocogooseProItalic",font-files("CocogooseProSemilight-trial.ttf"));
+@include font-face("lattoligth",font-files("Lato-Light.ttf"));
+@include font-face("lattoheavy",font-files("Lato-HeavyItalic.ttf"));
+@include font-face("lattoblack",font-files("Lato-Black.ttf"));
+
+/* *{
+  border: 2px solid red !important;
+} */
+@media screen and (max-width: $Mobile) {
+  .showcontent {
+    display: none !important;
+  }
+
+  /*   #show2, #card1, #card2, #card3, #card4{
+    display: none !important;
+  } */
+
+  .styleheader {
+    background: #dad6d6ca;
+
+    .headstyle {
+      display: none;
+    }
+
+    .navbarstyles {
+      background-color: white;
+      flex-direction: row;
+      display: flex;
+      height: 68px;
+
+      .Hamburgermenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 10px;
+        width: 37px;
+      }
+
+      .stylelogo1 {
+        display: none;
+      }
+
+      .menunavbar {
+        display: none;
+        width: 100%;
+        gap: 2em;
+        height: 100%;
+        padding: 2em;
+        left: 0;
+        background: #d6d6d6;
+        color: #ec5242;
+        position: fixed;
+        font-family: "lattoMedium";
+        font-size: x-large;
+
+        .closemenu {
+          top: 1em;
+          flex-direction: row;
+          right: 1em;
+          position: fixed;
+        }
+
+        li {
+          padding: 1em;
+        }
+      }
+
+      .hiddenMobile {
+        display: none;
+      }
+    }
+
+    .TittleConference {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      gap: 1em;
+
+      .titleheader1 {
+        font-family: "lattoMedium";
+        font-size: 2em;
+        color: #ec5242;
+      }
+
+      .titleheader2 {
+        font-family: "lattoblack";
+        font-size: 1.8em;
+        font-weight: 800;
+        color: #ec5242;
+        text-align: center;
+      }
+
+      .titleheader3 {
+        font-family: "lattoMedium";
+        font-size: 1.8em;
+        color: #ec5242;
+      }
+
+      .introduction {
+        padding: 5px;
+        font-size: 1em;
+        border: 1px solid #c6c6c6;
+        font-family: "lattoligth";
+        text-align: center;
+        margin-top: 20px;
+        background: white;
+      }
+
+      .introductiondesktop {
+        display: none;
+      }
+
+      .information {
+        font-family: "lattoligth";
+        font-size: small;
+        padding-top: 10px;
+        text-align: center;
+      }
+
+      .linkinfo {
+        font-family: "lattoMedium";
+        color: #272a31;
+        text-decoration: none;
+        font-size: large;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+    border: 1px solid #c6c6c6;
+    gap: 1em;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 18px;
+      color: black;
+      font-size: x-large;
+      text-align: center;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .infologo {
+      text-align: center;
+      padding-top: 1em;
+      font-family: "lattoMedium";
+      display: none;
+    }
+
+    .infologomobile {
+      text-align: center;
+      padding-top: 1em;
+      font-family: "lattoMedium";
+    }
+
+    .logostyle {
+      width: 18em;
+      display: flex;
+      border: 2px solid #c6c6c6;
+      padding: 2em;
+      margin: 3em;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .Globalsite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: black;
+      font-size: x-large;
+      align-items: center;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .headsites {
+      font-family: "lattoMedium";
+      text-align: center;
+    }
+
+    .siteconference {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 2em;
+      margin-bottom: 5em;
+
+      .stylesite {
+        width: 21em;
+      }
+    }
+  }
+
+  .partnership {
+    display: flex;
+    justify-content: center;
+    background: rgb(39, 42, 49);
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram3 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: white;
+      font-size: x-large;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper3 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .stylelogpartnership {
+        width: 8em;
+        float: left;
+      }
+    }
+  }
+
+  .licensestyle {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    gap: 1em;
+    padding: 1em;
+
+    .imagestylelicense {
+      width: 8em;
+    }
+
+    .styleinfo {
+      font-family: "lattoMedium";
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .styleheader {
+    background: #dad6d6ca;
+
+    .navbarstyles {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .Hamburgermenu {
+        display: none;
+      }
+
+      .headstyle {
+        display: flex;
+
+        .stylelogo1 {
+          width: 140px;
+          margin-right: 10em;
+          margin-left: 10em;
+        }
+      }
+
+      .menunavbar {
+        list-style: none;
+        color: #272a31;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        gap: 3em;
+        font-family: 'lattoMedium';
+
+        .closemenu {
+          display: none;
+        }
+      }
+
+      .hiddenDesktop {
+        display: none;
+      }
+
+      .CCcampain {
+        border: 2px solid #ec5242;
+        padding: 10px;
+      }
+    }
+
+    .TittleConference {
+      display: flex;
+      padding-top: 6em;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      height: 35em;
+
+      .titleheader1 {
+        font-family: "lattoMedium";
+        font-size: 2em;
+        color: #ec5242;
+      }
+
+      .titleheader2 {
+        font-family: "lattoMedium";
+        font-size: 3.5em;
+        color: #ec5242;
+        width: 800px;
+        text-align: center;
+      }
+
+      .line {
+        background: #ec5242;
+        height: 1px;
+        width: 30px;
+      }
+
+      .titleheader3 {
+        font-family: "lattoMedium";
+        font-size: 4em;
+        color: #ec5242;
+      }
+
+      .introduction {
+        display: none;
+      }
+
+      .information {
+        text-align: center;
+        font-family: "lattoMedium";
+
+        .separationinformation {
+          display: none;
+        }
+      }
+
+      .linkinfo {
+        font-family: "lattoMedium";
+        color: #272a31;
+        text-decoration: none;
+        font-size: large;
+      }
+
+      .introductiondesktop {
+        padding: 1em;
+        width: 56em;
+        height: 10em;
+        background: white;
+        font-family: "lattoligth";
+        border: 1px solid #c6c6c6;
+        margin-top: 20px;
+        font-size: unset;
+        text-align: center;
+      }
+
+      .tittledate {
+        font-family: "lattoheavy";
+        color: #272a31;
+        font-size: xx-large;
+        margin-top: 10px;
+      }
+
+      .tittlesite {
+        font-family: "lattoligth";
+        font-size: larger;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+    border: 1px solid #c6c6c6;
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 18px;
+      color: black;
+      font-size: x-large;
+
+      .textglobal {
+        display: none;
+      }
+    }
+
+    .infologomobile {
+      display: none;
+    }
+
+    .infologo {
+      text-align: center;
+      padding-top: 1em;
+      font-family: "lattoMedium";
+    }
+
+    .logostyle {
+      width: 27em;
+      border: 2px solid #c6c6c6;
+      padding: 2em;
+      margin: 3em;
+    }
+  }
+
+  .Globalsite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .tittlemainprogram {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      color: black;
+      font-size: x-large;
+      align-items: center;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .headsites {
+      font-family: "lattoMedium";
+    }
+
+    .siteconference {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      margin-top: 2em;
+      margin-bottom: 5em;
+
+      .stylesite {
+        width: 21em;
+      }
+    }
+  }
+
+  .partnership {
+    display: none;
+    justify-content: center;
+    background: rgb(39, 42, 49);
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+
+    .tittlemainprogram3 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: "lattoMedium";
+      padding: 1em;
+      padding-bottom: 0;
+      color: white;
+      font-size: x-large;
+    }
+
+    .line {
+      background: #ec5242;
+      height: 1px;
+      width: 30px;
+    }
+
+    .wrapper3 {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+
+      .stylelogpartnership {
+        width: 10em;
+      }
+    }
+  }
+
+  .licensestyle {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    background: #272a31;
+
+    .imagestylelicense {
+      width: 10em;
+    }
+
+    .styleinfo {
+      color: white;
+      font-family: "lattoMedium";
+    }
+  }
+}
