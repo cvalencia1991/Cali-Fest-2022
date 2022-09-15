@@ -11,8 +11,8 @@ First Cali fest Web Page Conference designe by Cesar Valencia, this structure is
 
 ## Live Demo
 
-[Live Demo Link](https://cvalencia1991.github.io/Conferenece-Web-Page/)
-[Video Design] (
+- [Live Demo Link](https://cvalencia1991.github.io/Conferenece-Web-Page/)
+- [Video Design] ( )
 
 
 ## Getting Started
