@@ -1,1 +1,0 @@
-{"version":3,"file":"request-async.d.ts","sourceRoot":"","sources":["../../src/request-async.ts"],"names":[],"mappings":"AAAA,OAAc,EAAE,WAAW,EAAE,MAAM,YAAY,CAAC;AAUhD,UAAU,eAAgB,SAAQ,WAAW;IACzC,kBAAkB,CAAC,EAAE,OAAO,CAAC;IAC7B,SAAS,CAAC,EAAE,OAAO,CAAC;CACvB;AAGD,eAAO,MAAM,YAAY,QAAe,MAAM,YAAW,eAAe,KAAQ,QAAQ,GAAG,CAuB1F,CAAC"}
