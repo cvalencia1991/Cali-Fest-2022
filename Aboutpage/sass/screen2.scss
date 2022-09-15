@@ -10,13 +10,6 @@
 
 $desktop:768px;
 
-@font-face {
-  font-family: 'COCOGOOSE Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("COCOGOOSE Regular"), url("../../fonts/cocogoose_trial.woff") format("woff");
-}
-
 .showcontent {
   display: none !important;
 }
