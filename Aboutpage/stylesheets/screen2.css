@@ -340,6 +340,17 @@ body {
     align-items: center;
     flex-direction: row;
   }
+  .styleheader .navbarstyles .menunavbar .styleaboutlink {
+    cursor: pointer;
+    color: black;
+    animation-name: aboutbutton;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    text-decoration: none;
+  }
+  .styleheader .navbarstyles .menunavbar .styleaboutlink:hover {
+    color: #ec5242;
+  }
   .styleheader .navbarstyles .menunavbar .closemenu {
     display: none;
   }

@@ -84,6 +84,8 @@ body{
         display: none;
 
 
+
+
         .closemenu {
           top: 1em;
           flex-direction: row;
@@ -342,6 +344,18 @@ body{
         align-items: center;
         flex-direction: row;
 
+       .styleaboutlink {
+          cursor: pointer;
+          color: black;
+          animation-name: aboutbutton;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          text-decoration: none;
+
+          &:hover {
+            color: #ec5242;
+          }
+        }
         .closemenu {
           display: none;
         }
