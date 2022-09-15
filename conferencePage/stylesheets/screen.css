@@ -386,6 +386,7 @@ body {
     animation-name: aboutbutton;
     animation-duration: 3s;
     animation-delay: 2s;
+    text-decoration: none;
   }
   .styleheader .navbarstyles .menunavbar .styleaboutlink:hover {
     color: #ec5242;

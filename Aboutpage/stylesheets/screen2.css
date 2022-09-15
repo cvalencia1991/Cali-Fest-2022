@@ -1,92 +1,21 @@
-/* stylelint-disable no-descending-specificity */
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-/* stylelint-disable at-rule-empty-line-before */
-
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -99,8 +28,7 @@ html {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -109,23 +37,16 @@ table {
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+q, blockquote {
   quotes: none;
 }
-
-q::before,
-q::after,
-blockquote::before,
-blockquote::after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
@@ -134,322 +55,261 @@ a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
-  font-family: "lattoMedium";
-  src: url('/fonts/Lato-Medium.ttf?1662992077') format('truetype');
+  font-family: 'COCOGOOSE Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
 }
-@font-face {
-  font-family: "CocogooseProItalic";
-  src: url('/fonts/CocogooseProSemilight-trial.ttf?1662992152') format('truetype');
-}
-@font-face {
-  font-family: "lattoligth";
-  src: url('/fonts/Lato-Light.ttf?1662992077') format('truetype');
-}
-@font-face {
-  font-family: "lattoheavy";
-  src: url('/fonts/Lato-HeavyItalic.ttf?1662992077') format('truetype');
+.showcontent {
+  display: none !important;
 }
 
-@font-face {
-  font-family: "lattoblack";
-  src: url('/fonts/Lato-Black.ttf?1662992077') format('truetype');
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  .showcontent {
-    display: none !important;
-  }
-
-  /*   #show2, #card1, #card2, #card3, #card4{
-    display: none !important;
-  } */
-  .styleheader {
-    background: #dad6d6ca;
-  }
-
-  .styleheader .headstyle {
-    display: none;
-  }
-
-  .styleheader .navbarstyles {
-    background-color: white;
-    flex-direction: row;
-    display: flex;
-    height: 68px;
-  }
-
-  .styleheader .navbarstyles .Hamburgermenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 10px;
-    width: 37px;
-  }
-
-  .styleheader .navbarstyles .stylelogo1 {
-    display: none;
-  }
-
-  .styleheader .navbarstyles .menunavbar {
-    display: none;
-    width: 100%;
-    gap: 2em;
-    height: 100%;
-    padding: 2em;
-    left: 0;
-    background: #d6d6d6;
-    color: #ec5242;
-    position: fixed;
-    font-family: "lattoMedium";
-    font-size: x-large;
-  }
-
-  .styleheader .navbarstyles .menunavbar .closemenu {
-    top: 1em;
-    flex-direction: row;
-    right: 1em;
-    position: fixed;
-  }
-
-  .styleheader .navbarstyles .menunavbar li {
-    padding: 1em;
-  }
-
-  .styleheader .navbarstyles .hiddenMobile {
-    display: none;
-  }
-
-  .styleheader .TittleConference {
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    gap: 1em;
-  }
-
-  .styleheader .TittleConference .titleheader1 {
-    font-family: "lattoMedium";
-    font-size: 2em;
-    color: #ec5242;
-  }
-
-  .styleheader .TittleConference .titleheader2 {
-    font-family: "lattoblack";
-    font-size: 1.8em;
-    font-weight: 800;
-    color: #ec5242;
-    text-align: center;
-  }
-
-  .styleheader .TittleConference .titleheader3 {
-    font-family: "lattoMedium";
-    font-size: 1.8em;
-    color: #ec5242;
-  }
-
-  .styleheader .TittleConference .introduction {
-    padding: 5px;
-    font-size: 1em;
-    border: 1px solid #c6c6c6;
-    font-family: "lattoligth";
-    text-align: center;
-    margin-top: 20px;
-    background: white;
-  }
-
-  .styleheader .TittleConference .introductiondesktop {
-    display: none;
-  }
-
-  .styleheader .TittleConference .information {
-    font-family: "lattoligth";
-    font-size: small;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .styleheader .TittleConference .linkinfo {
-    font-family: "lattoMedium";
-    color: #272a31;
-    text-decoration: none;
-    font-size: large;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    height: 500px;
-    border: 1px solid #c6c6c6;
-    gap: 1em;
-  }
-
-  .logo .tittlemainprogram {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 18px;
-    color: black;
-    font-size: x-large;
-    text-align: center;
-  }
-
-  .logo .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo .infologo {
-    text-align: center;
-    padding-top: 1em;
-    font-family: "lattoMedium";
-    display: none;
-  }
-
-  .logo .infologomobile {
-    text-align: center;
-    padding-top: 1em;
-    font-family: "lattoMedium";
-  }
-
-  .logo .logostyle {
-    width: 18em;
-    display: flex;
-    border: 2px solid #c6c6c6;
-    padding: 2em;
-    margin: 3em;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .Globalsite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .Globalsite .tittlemainprogram {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 1em;
-    color: black;
-    font-size: x-large;
-    align-items: center;
-  }
-
-  .Globalsite .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
-  .Globalsite .headsites {
-    font-family: "lattoMedium";
-    text-align: center;
-  }
-
-  .Globalsite .siteconference {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 2em;
-    margin-bottom: 5em;
-  }
-
-  .Globalsite .siteconference .stylesite {
-    width: 21em;
-  }
-
-  .partnership {
-    display: flex;
-    justify-content: center;
-    background: #272a31;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .partnership .tittlemainprogram3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 1em;
-    color: white;
-    font-size: x-large;
-  }
-
-  .partnership .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
-  .partnership .wrapper3 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .partnership .wrapper3 .stylelogpartnership {
-    width: 8em;
-    float: left;
-  }
-
-  .licensestyle {
-    display: flex;
-    flex-direction: row;
-    height: 5em;
-    align-items: center;
-    justify-content: space-evenly;
-    background: white;
-    gap: 1em;
-    padding: 1em;
-  }
-
-  .licensestyle .imagestylelicense {
-    width: 8em;
-  }
-
-  .licensestyle .styleinfo {
-    font-family: "lattoMedium";
-  }
+/* *{
+  border:2px solid red !important;
+} */
+.styleheader {
+  background: #dad6d6ca;
 }
+.styleheader .headstyle .menunavbar2 {
+  display: none;
+  background: #c6c6c6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  left: 0px;
+  gap: 1em;
+  flex-direction: column;
+  color: black;
+  font-size: x-large;
+}
+.styleheader .headstyle .menunavbar2 .styleaboutlink {
+  cursor: pointer;
+  color: black;
+  animation-name: aboutbutton;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  text-decoration: none;
+}
+.styleheader .headstyle .menunavbar2 .styleaboutlink:hover {
+  color: #ec5242;
+}
+.styleheader .navbarstyles {
+  background-color: white;
+  flex-direction: row;
+  display: flex;
+  height: 68px;
+}
+.styleheader .navbarstyles .Hamburgermenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 37px;
+}
+.styleheader .navbarstyles .stylelogo1 {
+  display: none;
+}
+.styleheader .navbarstyles .menunavbar {
+  display: none;
+}
+.styleheader .navbarstyles .menunavbar .closemenu {
+  top: 1em;
+  flex-direction: row;
+  right: 1em;
+  position: fixed;
+}
+.styleheader .navbarstyles .menunavbar li {
+  padding: 1em;
+}
+.styleheader .navbarstyles .hiddenMobile {
+  display: none;
+}
+.styleheader .TittleConference {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  gap: 1em;
+}
+.styleheader .TittleConference .titleheader1 {
+  font-size: 2em;
+  color: #ec5242;
+}
+.styleheader .TittleConference .titleheader2 {
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #ec5242;
+  text-align: center;
+  font-family: 'COCOGOOSE Regular';
+}
+.styleheader .TittleConference .titleheader3 {
+  font-size: 1.8em;
+  color: #ec5242;
+}
+.styleheader .TittleConference .introduction {
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid #c6c6c6;
+  text-align: center;
+  margin-top: 20px;
+  background: white;
+}
+.styleheader .TittleConference .introductiondesktop {
+  display: none;
+}
+.styleheader .TittleConference .information {
+  font-size: small;
+  padding-top: 10px;
+  text-align: center;
+}
+.styleheader .TittleConference .linkinfo {
+  color: #272a31;
+  text-decoration: none;
+  font-size: large;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #c6c6c6;
+  gap: 1em;
+}
+.logo .tittlemainprogram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 18px;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+}
+.logo .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.logo .infologo {
+  text-align: center;
+  padding-top: 1em;
+  display: none;
+  padding: 0;
+}
+.logo .infologomobile {
+  text-align: center;
+  padding-top: 1em;
+}
+.logo .logostyle {
+  width: 18em;
+  display: flex;
+  border: 2px solid #c6c6c6;
+  padding: 2em;
+  margin: 3em;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Globalsite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.Globalsite .tittlemainprogram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  color: black;
+  font-size: x-large;
+  align-items: center;
+}
+.Globalsite .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+.Globalsite .headsites {
+  text-align: center;
+}
+.Globalsite .siteconference {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.Globalsite .siteconference .stylesite {
+  width: 23em;
+}
+
+.partnership {
+  display: flex;
+  justify-content: center;
+  background: #272a31;
+  flex-direction: column;
+  align-items: center;
+}
+.partnership .tittlemainprogram3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  color: white;
+  font-size: x-large;
+}
+.partnership .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+.partnership .wrapper3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.partnership .wrapper3 .stylelogpartnership {
+  width: 8em;
+  float: left;
+}
+
+.licensestyle {
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  gap: 1em;
+  padding: 1em;
+}
+.licensestyle .imagestylelicense {
+  width: 8em;
+}
+
 @media screen and (min-width: 768px) {
   .styleheader {
     background: #dad6d6ca;
   }
-
   .styleheader .navbarstyles {
     background-color: white;
     display: flex;
@@ -457,21 +317,21 @@ summary {
     justify-content: center;
     align-items: center;
   }
-
   .styleheader .navbarstyles .Hamburgermenu {
     display: none;
   }
-
   .styleheader .navbarstyles .headstyle {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
   }
-
   .styleheader .navbarstyles .headstyle .stylelogo1 {
+    display: flex;
     width: 140px;
     margin-right: 10em;
     margin-left: 10em;
   }
-
   .styleheader .navbarstyles .menunavbar {
     list-style: none;
     color: #272a31;
@@ -479,23 +339,17 @@ summary {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 3em;
-    font-family: 'lattoMedium';
   }
-
   .styleheader .navbarstyles .menunavbar .closemenu {
     display: none;
   }
-
   .styleheader .navbarstyles .hiddenDesktop {
     display: none;
   }
-
   .styleheader .navbarstyles .CCcampain {
     border: 2px solid #ec5242;
     padding: 10px;
   }
-
   .styleheader .TittleConference {
     display: flex;
     padding-top: 6em;
@@ -504,74 +358,56 @@ summary {
     gap: 1em;
     height: 35em;
   }
-
   .styleheader .TittleConference .titleheader1 {
-    font-family: "lattoMedium";
     font-size: 2em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .titleheader2 {
-    font-family: "lattoMedium";
     font-size: 3.5em;
     color: #ec5242;
     width: 800px;
     text-align: center;
   }
-
   .styleheader .TittleConference .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .styleheader .TittleConference .titleheader3 {
-    font-family: "lattoMedium";
     font-size: 4em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .introduction {
     display: none;
   }
-
   .styleheader .TittleConference .information {
     text-align: center;
-    font-family: "lattoMedium";
   }
-
   .styleheader .TittleConference .information .separationinformation {
     display: none;
   }
-
   .styleheader .TittleConference .linkinfo {
-    font-family: "lattoMedium";
     color: #272a31;
     text-decoration: none;
     font-size: large;
   }
-
   .styleheader .TittleConference .introductiondesktop {
     padding: 1em;
     width: 56em;
     height: 10em;
     background: white;
-    font-family: "lattoligth";
     border: 1px solid #c6c6c6;
     margin-top: 20px;
     font-size: unset;
     text-align: center;
+    display: flex;
   }
-
   .styleheader .TittleConference .tittledate {
-    font-family: "lattoheavy";
     color: #272a31;
     font-size: xx-large;
     margin-top: 10px;
   }
-
   .styleheader .TittleConference .tittlesite {
-    font-family: "lattoligth";
     font-size: larger;
     padding-top: 10px;
   }
@@ -585,7 +421,6 @@ summary {
     height: 500px;
     border: 1px solid #c6c6c6;
   }
-
   .logo .line {
     background: #ec5242;
     height: 1px;
@@ -593,31 +428,25 @@ summary {
     display: flex;
     flex-direction: column;
   }
-
   .logo .tittlemainprogram {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 18px;
     color: black;
     font-size: x-large;
   }
-
   .logo .tittlemainprogram .textglobal {
     display: none;
   }
-
   .logo .infologomobile {
     display: none;
   }
-
   .logo .infologo {
-    text-align: center;
-    padding-top: 1em;
-    font-family: "lattoMedium";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
   .logo .logostyle {
     width: 27em;
     border: 2px solid #c6c6c6;
@@ -631,28 +460,20 @@ summary {
     align-items: center;
     gap: 1em;
   }
-
   .Globalsite .tittlemainprogram {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 1em;
     color: black;
     font-size: x-large;
     align-items: center;
   }
-
   .Globalsite .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
-  .Globalsite .headsites {
-    font-family: "lattoMedium";
-  }
-
   .Globalsite .siteconference {
     display: flex;
     flex-direction: row;
@@ -660,7 +481,6 @@ summary {
     margin-top: 2em;
     margin-bottom: 5em;
   }
-
   .Globalsite .siteconference .stylesite {
     width: 21em;
   }
@@ -673,31 +493,26 @@ summary {
     flex-direction: column;
     align-items: center;
   }
-
   .partnership .tittlemainprogram3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 1em;
     padding-bottom: 0;
     color: white;
     font-size: x-large;
   }
-
   .partnership .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .partnership .wrapper3 {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 10px;
   }
-
   .partnership .wrapper3 .stylelogpartnership {
     width: 10em;
   }
@@ -711,13 +526,10 @@ summary {
     gap: 5em;
     background: #272a31;
   }
-
   .licensestyle .imagestylelicense {
     width: 10em;
   }
-
   .licensestyle .styleinfo {
     color: white;
-    font-family: "lattoMedium";
   }
 }

@@ -79,6 +79,7 @@ $desktop:768px;
             color: #ec5242;
           }
         }
+      
       }
     }
 
@@ -391,6 +392,7 @@ $desktop:768px;
           animation-name: aboutbutton;
           animation-duration: 3s;
           animation-delay: 2s;
+          text-decoration: none;
 
           &:hover {
             color: #ec5242;

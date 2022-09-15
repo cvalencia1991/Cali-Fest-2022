@@ -2,35 +2,64 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/font-face";
 
-$Mobile:768px;
+
 $desktop:768px;
 
-@include font-face("lattoMedium",font-files('Lato-Medium.ttf'));
-@include font-face("CocogooseProItalic",font-files("CocogooseProSemilight-trial.ttf"));
-@include font-face("lattoligth",font-files("Lato-Light.ttf"));
-@include font-face("lattoheavy",font-files("Lato-HeavyItalic.ttf"));
-@include font-face("lattoblack",font-files("Lato-Black.ttf"));
 
-/* *{
-  border: 2px solid red !important;
-} */
-@media screen and (max-width: $Mobile) {
+@font-face {
+  font-family: 'COCOGOOSE Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+}
   .showcontent {
     display: none !important;
   }
 
-  /*   #show2, #card1, #card2, #card3, #card4{
-    display: none !important;
-  } */
+body{
+  font-family: 'Lato', sans-serif;
+}
+/* *{
+  border:2px solid red !important;
+} */
 
   .styleheader {
     background: #dad6d6ca;
 
     .headstyle {
-      display: none;
+
+      .menunavbar2{
+        display: none;
+        background: #c6c6c6;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        left: 0px;
+        gap: 1em;
+        flex-direction: column;
+        color: black;
+        font-size: x-large;
+
+        .styleaboutlink {
+          cursor: pointer;
+          color: black;
+          animation-name: aboutbutton;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          text-decoration: none;
+
+          &:hover {
+            color: #ec5242;
+          }
+        }
+      }
     }
 
     .navbarstyles {
@@ -53,16 +82,7 @@ $desktop:768px;
 
       .menunavbar {
         display: none;
-        width: 100%;
-        gap: 2em;
-        height: 100%;
-        padding: 2em;
-        left: 0;
-        background: #d6d6d6;
-        color: #ec5242;
-        position: fixed;
-        font-family: Lato, sans-serif;
-        font-size: x-large;
+
 
         .closemenu {
           top: 1em;
@@ -74,6 +94,8 @@ $desktop:768px;
         li {
           padding: 1em;
         }
+
+
       }
 
       .hiddenMobile {
@@ -83,28 +105,28 @@ $desktop:768px;
 
     .TittleConference {
       display: flex;
-      padding: 30px;
+      padding: 1em;
       flex-direction: column;
       align-items: center;
       height: 400px;
       gap: 1em;
 
       .titleheader1 {
-        font-family: "lattoMedium";
+
         font-size: 2em;
         color: #ec5242;
       }
 
       .titleheader2 {
-        font-family: "lattoblack";
         font-size: 1.8em;
         font-weight: 800;
         color: #ec5242;
         text-align: center;
+        font-family: 'COCOGOOSE Regular';;
       }
 
       .titleheader3 {
-        font-family: "lattoMedium";
+
         font-size: 1.8em;
         color: #ec5242;
       }
@@ -113,7 +135,6 @@ $desktop:768px;
         padding: 5px;
         font-size: 1em;
         border: 1px solid #c6c6c6;
-        font-family: "lattoligth";
         text-align: center;
         margin-top: 20px;
         background: white;
@@ -124,14 +145,13 @@ $desktop:768px;
       }
 
       .information {
-        font-family: "lattoligth";
         font-size: small;
         padding-top: 10px;
         text-align: center;
       }
 
       .linkinfo {
-        font-family: "lattoMedium";
+
         color: #272a31;
         text-decoration: none;
         font-size: large;
@@ -145,7 +165,6 @@ $desktop:768px;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    height: 500px;
     border: 1px solid #c6c6c6;
     gap: 1em;
 
@@ -153,7 +172,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 18px;
       color: black;
       font-size: x-large;
@@ -171,14 +189,13 @@ $desktop:768px;
     .infologo {
       text-align: center;
       padding-top: 1em;
-      font-family: "lattoMedium";
       display: none;
+      padding: 0;
     }
 
     .infologomobile {
       text-align: center;
       padding-top: 1em;
-      font-family: "lattoMedium";
     }
 
     .logostyle {
@@ -204,7 +221,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 1em;
       color: black;
       font-size: x-large;
@@ -218,7 +234,6 @@ $desktop:768px;
     }
 
     .headsites {
-      font-family: "lattoMedium";
       text-align: center;
     }
 
@@ -230,7 +245,7 @@ $desktop:768px;
       margin-bottom: 5em;
 
       .stylesite {
-        width: 21em;
+        width: 23em;
       }
     }
   }
@@ -246,7 +261,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 1em;
       color: white;
       font-size: x-large;
@@ -287,10 +301,9 @@ $desktop:768px;
     }
 
     .styleinfo {
-      font-family: "lattoMedium";
     }
   }
-}
+
 
 @media screen and (min-width: $desktop) {
   .styleheader {
@@ -308,9 +321,13 @@ $desktop:768px;
       }
 
       .headstyle {
-        display: flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
 
         .stylelogo1 {
+          display: flex;
           width: 140px;
           margin-right: 10em;
           margin-left: 10em;
@@ -324,8 +341,6 @@ $desktop:768px;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-        gap: 3em;
-        font-family: 'lattoMedium';
 
         .closemenu {
           display: none;
@@ -351,13 +366,13 @@ $desktop:768px;
       height: 35em;
 
       .titleheader1 {
-        font-family: "lattoMedium";
+
         font-size: 2em;
         color: #ec5242;
       }
 
       .titleheader2 {
-        font-family: "lattoMedium";
+
         font-size: 3.5em;
         color: #ec5242;
         width: 800px;
@@ -371,7 +386,7 @@ $desktop:768px;
       }
 
       .titleheader3 {
-        font-family: "lattoMedium";
+
         font-size: 4em;
         color: #ec5242;
       }
@@ -382,7 +397,7 @@ $desktop:768px;
 
       .information {
         text-align: center;
-        font-family: "lattoMedium";
+
 
         .separationinformation {
           display: none;
@@ -390,7 +405,7 @@ $desktop:768px;
       }
 
       .linkinfo {
-        font-family: "lattoMedium";
+
         color: #272a31;
         text-decoration: none;
         font-size: large;
@@ -401,22 +416,20 @@ $desktop:768px;
         width: 56em;
         height: 10em;
         background: white;
-        font-family: "lattoligth";
         border: 1px solid #c6c6c6;
         margin-top: 20px;
         font-size: unset;
         text-align: center;
+        display: flex;
       }
 
       .tittledate {
-        font-family: "lattoheavy";
         color: #272a31;
         font-size: xx-large;
         margin-top: 10px;
       }
 
       .tittlesite {
-        font-family: "lattoligth";
         font-size: larger;
         padding-top: 10px;
       }
@@ -444,7 +457,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 18px;
       color: black;
       font-size: x-large;
@@ -459,9 +471,9 @@ $desktop:768px;
     }
 
     .infologo {
-      text-align: center;
-      padding-top: 1em;
-      font-family: "lattoMedium";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .logostyle {
@@ -482,7 +494,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 1em;
       color: black;
       font-size: x-large;
@@ -496,7 +507,6 @@ $desktop:768px;
     }
 
     .headsites {
-      font-family: "lattoMedium";
     }
 
     .siteconference {
@@ -524,7 +534,6 @@ $desktop:768px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-family: "lattoMedium";
       padding: 1em;
       padding-bottom: 0;
       color: white;
@@ -564,7 +573,6 @@ $desktop:768px;
 
     .styleinfo {
       color: white;
-      font-family: "lattoMedium";
     }
   }
 }
