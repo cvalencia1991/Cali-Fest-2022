@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
 
 html,
 body,
@@ -163,9 +164,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* *{
-  border:2px solid red !important;
-} */
+.line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+
 .styleheader {
   background: #dad6d6ca;
 }
@@ -254,7 +258,7 @@ body {
   font-weight: 800;
   color: #ec5242;
   text-align: center;
-  font-family: 'COCOGOOSE Regular';
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 .styleheader .TittleConference .titleheader3 {
@@ -307,14 +311,6 @@ body {
   text-align: center;
 }
 
-.logo .line {
-  background: #ec5242;
-  height: 1px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
 .logo .infologo {
   text-align: center;
   padding: 0;
@@ -355,12 +351,6 @@ body {
   align-items: center;
 }
 
-.Globalsite .line {
-  background: #ec5242;
-  height: 1px;
-  width: 30px;
-}
-
 .Globalsite .headsites {
   text-align: center;
 }
@@ -391,12 +381,6 @@ body {
   flex-direction: column;
   padding: 1em;
   color: white;
-}
-
-.partnership .line {
-  background: #ec5242;
-  height: 1px;
-  width: 30px;
 }
 
 .partnership .wrapper3 {
@@ -514,12 +498,6 @@ body {
     text-align: center;
   }
 
-  .styleheader .TittleConference .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
   .styleheader .TittleConference .titleheader3 {
     font-size: 4em;
     color: #ec5242;
@@ -576,14 +554,6 @@ body {
     border: 1px solid #c6c6c6;
   }
 
-  .logo .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
   .logo .tittlemainprogram {
     display: flex;
     justify-content: center;
@@ -631,12 +601,6 @@ body {
     align-items: center;
   }
 
-  .Globalsite .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
   .Globalsite .siteconference {
     display: flex;
     flex-direction: row;
@@ -666,12 +630,6 @@ body {
     padding-bottom: 0;
     color: white;
     font-size: x-large;
-  }
-
-  .partnership .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
   }
 
   .partnership .wrapper3 {
