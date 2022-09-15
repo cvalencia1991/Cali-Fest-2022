@@ -1,11 +1,11 @@
-function deploymenu2() {
-  const menubar = document.getElementById('menubar2');
-  menubar.style.display = 'flex';
+function deployMenu2() {
+  const menuBar = document.getElementById('menubar2');
+  menuBar.style.display = 'flex';
 }
-document.getElementById('deploy-menu2').addEventListener('click', deploymenu2);
+document.getElementById('deploy-menu2').addEventListener('click', deployMenu2);
 
-function closemenu2() {
-  const menubar = document.getElementById('menubar2');
-  menubar.style.display = 'none';
+function closeMenu2() {
+  const menuBar = document.getElementById('menubar2');
+  menuBar.style.display = 'none';
 }
-document.getElementById('closebutton2').addEventListener('click', closemenu2);
+document.getElementById('closebutton2').addEventListener('click', closeMenu2);

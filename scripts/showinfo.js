@@ -1,13 +1,11 @@
-function deploymenu() {
-  const menubar = document.getElementById('menubar');
-  menubar.style.display = 'flex';
+function deployMenu() {
+  const menuBar = document.getElementById('menubar');
+  menuBar.style.display = 'flex';
 }
-document.getElementById('deploy-menu').addEventListener('click', deploymenu);
+document.getElementById('deploy-menu').addEventListener('click', deployMenu);
 
-function closemenu() {
-  const menubar = document.getElementById('menubar');
-  menubar.style.display = 'none';
+function closeMenu() {
+  const menuBar = document.getElementById('menubar');
+  menuBar.style.display = 'none';
 }
-document.getElementById('closebutton').addEventListener('click', closemenu);
-
-/* About Page */
+document.getElementById('closebutton').addEventListener('click', closeMenu);
