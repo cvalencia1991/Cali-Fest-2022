@@ -10,12 +10,16 @@
 
 $desktop:768px;
 
-.showcontent {
-  display: none !important;
-}
-
 body {
   font-family: 'Lato', sans-serif;
+}
+
+.navbarstyles {
+  display: none;
+
+  .linkmain {
+    display: none;
+  }
 }
 
 .line {
@@ -24,19 +28,29 @@ body {
   width: 30px;
 }
 
-.styleheader {
-  background: #dad6d6ca;
+.home {
+  .Hamburgermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    width: 37px;
+  }
 
   .headstyle {
-    .menunavbar2 {
+    .menunavbar {
       display: none;
+    }
+
+    .menunavbar2 {
       background: #c6c6c6;
+      display: none;
       position: absolute;
       width: 100%;
       height: 100%;
       padding: 1em;
       left: 0;
-      gap: 1em;
+      top: 0;
       flex-direction: column;
       color: black;
       font-size: x-large;
@@ -56,50 +70,27 @@ body {
     }
   }
 
-  .navbarstyles {
-    background-color: white;
-    flex-direction: row;
-    display: flex;
-    height: 68px;
-
-    .Hamburgermenu {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      margin: 10px;
-      width: 37px;
-    }
-
-    .stylelogo1 {
-      display: none;
-    }
-
-    .menunavbar {
-      display: none;
-
-      .closemenu {
-        top: 1em;
-        flex-direction: row;
-        right: 1em;
-        position: fixed;
-      }
-
-      li {
-        padding: 1em;
-      }
-    }
-
-    .hiddenMobile {
-      display: none;
-    }
+  .stylelogo1 {
+    display: none;
   }
+
+  li {
+    padding: 1em;
+  }
+}
+
+.hiddenMobile {
+  display: none;
+}
+
+.styleheader {
+  background: #dad6d6ca;
 
   .TittleConference {
     display: flex;
     padding: 1em;
     flex-direction: column;
     align-items: center;
-    height: 400px;
     gap: 1em;
 
     .titleheader1 {
@@ -127,10 +118,7 @@ body {
       text-align: center;
       margin-top: 20px;
       background: white;
-    }
-
-    .introductiondesktop {
-      display: none;
+      width: 35em;
     }
 
     .information {
@@ -168,8 +156,8 @@ body {
 
   .infologo {
     text-align: center;
-    padding: 0;
     display: none;
+    padding: 5px;
   }
 
   .infologomobile {
@@ -178,7 +166,7 @@ body {
   }
 
   .logostyle {
-    width: 18em;
+    width: 13em;
     display: flex;
     border: 2px solid #c6c6c6;
     padding: 2em;
@@ -268,32 +256,38 @@ body {
 }
 
 @media screen and (min-width: $desktop) {
-  .styleheader {
-    background: #dad6d6ca;
+  .navbarstyles {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2em;
+    padding-right: 25em;
+    color: white;
 
-    .navbarstyles {
-      background-color: white;
+    .linkmain {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      gap: 1em;
+    }
+  }
+
+  .home {
+    .Hamburgermenu {
+      display: none;
+    }
+
+    .headstyle {
+      display: flex;
       align-items: center;
+      justify-content: center;
+      flex-direction: row;
 
-      .Hamburgermenu {
-        display: none;
-      }
-
-      .headstyle {
+      .stylelogo1 {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-
-        .stylelogo1 {
-          display: flex;
-          width: 140px;
-          margin-right: 10em;
-          margin-left: 10em;
-        }
+        width: 140px;
+        margin-right: 10em;
+        margin-left: 10em;
       }
 
       .menunavbar {
@@ -304,216 +298,115 @@ body {
         align-items: center;
         flex-direction: row;
 
-        .styleaboutlink {
-          cursor: pointer;
-          color: black;
-          animation-name: aboutbutton;
-          animation-duration: 3s;
-          animation-delay: 2s;
-          text-decoration: none;
-
-          &:hover {
-            color: #ec5242;
-          }
+        .CCcampain {
+          border: 2px solid #ec5242;
+          padding: 10px;
         }
-
-        .closemenu {
-          display: none;
-        }
-      }
-
-      .hiddenDesktop {
-        display: none;
-      }
-
-      .CCcampain {
-        border: 2px solid #ec5242;
-        padding: 10px;
       }
     }
 
-    .TittleConference {
-      display: flex;
-      padding-top: 6em;
-      flex-direction: column;
-      align-items: center;
-      gap: 1em;
-      height: 35em;
-
-      .titleheader1 {
-        font-size: 2em;
-        color: #ec5242;
-      }
-
-      .titleheader2 {
-        font-size: 3.5em;
-        color: #ec5242;
-        width: 800px;
-        text-align: center;
-      }
-
-      .titleheader3 {
-        font-size: 4em;
-        color: #ec5242;
-      }
-
-      .introduction {
-        display: none;
-      }
-
-      .information {
-        text-align: center;
-
-        .separationinformation {
-          display: none;
-        }
-      }
-
-      .linkinfo {
-        color: #272a31;
+    .menunavbar2 {
+      .styleaboutlink {
+        cursor: pointer;
+        color: black;
+        animation-name: aboutbutton;
+        animation-duration: 3s;
+        animation-delay: 2s;
         text-decoration: none;
-        font-size: large;
-      }
 
-      .introductiondesktop {
-        padding: 1em;
-        width: 56em;
-        height: 10em;
-        background: white;
-        border: 1px solid #c6c6c6;
-        margin-top: 20px;
-        font-size: unset;
-        text-align: center;
-        display: flex;
-      }
-
-      .tittledate {
-        color: #272a31;
-        font-size: xx-large;
-        margin-top: 10px;
-      }
-
-      .tittlesite {
-        font-size: larger;
-        padding-top: 10px;
+        &:hover {
+          color: #ec5242;
+        }
       }
     }
   }
 
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    height: 500px;
-    border: 1px solid #c6c6c6;
+  .styleheader {
+    background: #dad6d6ca;
 
-    .tittlemainprogram {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 18px;
-      color: black;
-      font-size: x-large;
-
-      .textglobal {
-        display: none;
-      }
-    }
-
-    .infologomobile {
+    .closemenu {
       display: none;
     }
-
-    .infologo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .logostyle {
-      width: 27em;
-      border: 2px solid #c6c6c6;
-      padding: 2em;
-      margin: 3em;
-    }
   }
 
-  .Globalsite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-
-    .tittlemainprogram {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 1em;
-      color: black;
-      font-size: x-large;
-      align-items: center;
-    }
-
-    .siteconference {
-      display: flex;
-      flex-direction: row;
-      gap: 1em;
-      margin-top: 2em;
-      margin-bottom: 5em;
-
-      .stylesite {
-        width: 21em;
-      }
-    }
-  }
-
-  .partnership {
+  .hiddenDesktop {
     display: none;
-    justify-content: center;
-    background: rgb(39, 42, 49);
-    height: 200px;
-    flex-direction: column;
-    align-items: center;
+  }
+}
 
-    .tittlemainprogram3 {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 1em;
-      padding-bottom: 0;
-      color: white;
-      font-size: x-large;
-    }
+.introductiondesktop {
+  padding: 1em;
+  background: white;
+  border: 1px solid #c6c6c6;
+  margin-top: 20px;
+  font-size: unset;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 
-    .wrapper3 {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 10px;
+.TittleConference {
+  display: flex;
+  padding-top: 6em;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  height: 35em;
 
-      .stylelogpartnership {
-        width: 10em;
-      }
+  .titleheader2 {
+    font-size: 3.5em;
+    color: #ec5242;
+    text-align: center;
+  }
+
+  .titleheader3 {
+    font-size: 4em;
+    color: #ec5242;
+  }
+
+  .introduction {
+    display: none;
+  }
+
+  .information {
+    text-align: center;
+
+    .separationinformation {
+      display: none;
     }
   }
 
-  .licensestyle {
-    display: flex;
-    flex-direction: row;
-    height: 5em;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
-    background: #272a31;
-
-    .imagestylelicense {
-      width: 10em;
-    }
-
-    .styleinfo {
-      color: white;
-    }
+  .linkinfo {
+    color: #272a31;
+    text-decoration: none;
+    font-size: large;
   }
+
+  .tittledate {
+    color: #272a31;
+    font-size: xx-large;
+    margin-top: 10px;
+  }
+
+  .tittlesite {
+    font-size: larger;
+    padding-top: 10px;
+  }
+}
+
+.infologomobile {
+  display: none;
+}
+
+.infologo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logostyle {
+  width: 13em;
+  border: 2px solid #c6c6c6;
+  padding: 2em;
+  margin: 3em;
 }
