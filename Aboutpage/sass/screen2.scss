@@ -45,7 +45,7 @@ body {
     .menunavbar2 {
       background: #c6c6c6;
       display: none;
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;
       padding: 1em;
@@ -85,53 +85,59 @@ body {
 
 .styleheader {
   background: #dad6d6ca;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 
-  .TittleConference {
-    display: flex;
-    padding: 1em;
+  .titleheader1 {
+    font-size: 2em;
+    color: #ec5242;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    display: flex;
+  }
 
-    .titleheader1 {
-      font-size: 2em;
-      color: #ec5242;
-    }
+  .titleheader2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #ec5242;
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-    .titleheader2 {
-      font-size: 1.8em;
-      font-weight: 800;
-      color: #ec5242;
-      text-align: center;
-      font-family: 'COCOGOOSE', sans-serif;
-    }
+  .titleheader3 {
+    font-size: 1.8em;
+    color: #ec5242;
+  }
 
-    .titleheader3 {
-      font-size: 1.8em;
-      color: #ec5242;
-    }
+  .introduction {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #c6c6c6;
+    text-align: center;
+    margin-top: 20px;
+    background: white;
+  }
 
-    .introduction {
-      padding: 5px;
-      font-size: 1em;
-      border: 1px solid #c6c6c6;
-      text-align: center;
-      margin-top: 20px;
-      background: white;
-      width: 35em;
-    }
+  .information {
+    font-size: small;
+    padding-top: 10px;
+    text-align: center;
+  }
 
-    .information {
-      font-size: small;
-      padding-top: 10px;
-      text-align: center;
-    }
+  .introductiondesktop {
+    display: none;
+  }
 
-    .linkinfo {
-      color: #272a31;
-      text-decoration: none;
-      font-size: large;
-    }
+  .linkinfo {
+    color: #272a31;
+    text-decoration: none;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -163,13 +169,13 @@ body {
   .infologomobile {
     text-align: center;
     padding-top: 1em;
+    width: 20em;
   }
 
   .logostyle {
     width: 13em;
     display: flex;
     border: 2px solid #c6c6c6;
-    padding: 2em;
     margin: 3em;
     justify-content: center;
     flex-direction: row;
@@ -263,7 +269,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 2em;
-    padding-right: 25em;
+    padding-right: 20em;
     color: white;
 
     .linkmain {
@@ -285,7 +291,7 @@ body {
 
       .stylelogo1 {
         display: flex;
-        width: 140px;
+        width: 4em;
         margin-right: 10em;
         margin-left: 10em;
       }
@@ -324,6 +330,21 @@ body {
   .styleheader {
     background: #dad6d6ca;
 
+    .introduction {
+      display: none;
+    }
+
+    .introductiondesktop {
+      padding: 1em;
+      background: white;
+      border: 1px solid #c6c6c6;
+      margin-top: 20px;
+      font-size: unset;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+
     .closemenu {
       display: none;
     }
@@ -334,79 +355,17 @@ body {
   }
 }
 
-.introductiondesktop {
-  padding: 1em;
-  background: white;
-  border: 1px solid #c6c6c6;
-  margin-top: 20px;
-  font-size: unset;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.TittleConference {
-  display: flex;
-  padding-top: 6em;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  height: 35em;
-
-  .titleheader2 {
-    font-size: 3.5em;
-    color: #ec5242;
-    text-align: center;
-  }
-
-  .titleheader3 {
-    font-size: 4em;
-    color: #ec5242;
-  }
-
-  .introduction {
-    display: none;
-  }
-
-  .information {
-    text-align: center;
-
-    .separationinformation {
-      display: none;
-    }
-  }
-
-  .linkinfo {
-    color: #272a31;
-    text-decoration: none;
-    font-size: large;
-  }
-
-  .tittledate {
-    color: #272a31;
-    font-size: xx-large;
-    margin-top: 10px;
-  }
-
-  .tittlesite {
-    font-size: larger;
-    padding-top: 10px;
-  }
-}
-
-.infologomobile {
+.separationinformation {
   display: none;
 }
 
-.infologo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.tittledate {
+  color: #272a31;
+  font-size: xx-large;
+  margin-top: 10px;
 }
 
-.logostyle {
-  width: 13em;
-  border: 2px solid #c6c6c6;
-  padding: 2em;
-  margin: 3em;
+.tittlesite {
+  font-size: larger;
+  padding-top: 10px;
 }

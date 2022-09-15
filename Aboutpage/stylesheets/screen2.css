@@ -182,7 +182,7 @@ body {
 .home .headstyle .menunavbar2 {
   background: #c6c6c6;
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   padding: 1em;
@@ -220,9 +220,6 @@ body {
 
 .styleheader {
   background: #dad6d6ca;
-}
-
-.styleheader .TittleConference {
   display: flex;
   padding: 1em;
   flex-direction: column;
@@ -230,12 +227,15 @@ body {
   gap: 1em;
 }
 
-.styleheader .TittleConference .titleheader1 {
+.styleheader .titleheader1 {
   font-size: 2em;
   color: #ec5242;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
-.styleheader .TittleConference .titleheader2 {
+.styleheader .titleheader2 {
   font-size: 1.8em;
   font-weight: 800;
   color: #ec5242;
@@ -243,31 +243,37 @@ body {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
-.styleheader .TittleConference .titleheader3 {
+.styleheader .titleheader3 {
   font-size: 1.8em;
   color: #ec5242;
 }
 
-.styleheader .TittleConference .introduction {
+.styleheader .introduction {
   padding: 5px;
   font-size: 1em;
   border: 1px solid #c6c6c6;
   text-align: center;
   margin-top: 20px;
   background: white;
-  width: 38em;
 }
 
-.styleheader .TittleConference .information {
+.styleheader .information {
   font-size: small;
   padding-top: 10px;
   text-align: center;
 }
 
-.styleheader .TittleConference .linkinfo {
+.styleheader .introductiondesktop {
+  display: none;
+}
+
+.styleheader .linkinfo {
   color: #272a31;
   text-decoration: none;
   font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -299,13 +305,13 @@ body {
 .logo .infologomobile {
   text-align: center;
   padding-top: 1em;
+  width: 20em;
 }
 
 .logo .logostyle {
   width: 13em;
   display: flex;
   border: 2px solid #c6c6c6;
-  padding: 2em;
   margin: 3em;
   justify-content: center;
   flex-direction: row;
@@ -398,7 +404,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 2em;
-    padding-right: 25em;
+    padding-right: 20em;
     color: white;
   }
 
@@ -420,7 +426,7 @@ body {
 
   .home .headstyle .stylelogo1 {
     display: flex;
-    width: 140px;
+    width: 4em;
     margin-right: 10em;
     margin-left: 10em;
   }
@@ -456,6 +462,21 @@ body {
     background: #dad6d6ca;
   }
 
+  .styleheader .introduction {
+    display: none;
+  }
+
+  .styleheader .introductiondesktop {
+    padding: 1em;
+    background: white;
+    border: 1px solid #c6c6c6;
+    margin-top: 20px;
+    font-size: unset;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
   .styleheader .closemenu {
     display: none;
   }
@@ -465,79 +486,17 @@ body {
   }
 }
 
-.introductiondesktop {
-  padding: 1em;
-  background: white;
-  border: 1px solid #c6c6c6;
-  margin-top: 20px;
-  font-size: unset;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.TittleConference {
-  display: flex;
-  padding-top: 6em;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  height: 35em;
-}
-
-.TittleConference .titleheader2 {
-  font-size: 3.5em;
-  color: #ec5242;
-  text-align: center;
-}
-
-.TittleConference .titleheader3 {
-  font-size: 4em;
-  color: #ec5242;
-}
-
-.TittleConference .introduction {
+.separationinformation {
   display: none;
 }
 
-.TittleConference .information {
-  text-align: center;
-}
-
-.TittleConference .information .separationinformation {
-  display: none;
-}
-
-.TittleConference .linkinfo {
-  color: #272a31;
-  text-decoration: none;
-  font-size: large;
-}
-
-.TittleConference .tittledate {
+.tittledate {
   color: #272a31;
   font-size: xx-large;
   margin-top: 10px;
 }
 
-.TittleConference .tittlesite {
+.tittlesite {
   font-size: larger;
   padding-top: 10px;
-}
-
-.infologomobile {
-  display: none;
-}
-
-.infologo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logostyle {
-  width: 13em;
-  border: 2px solid #c6c6c6;
-  padding: 2em;
-  margin: 3em;
 }
