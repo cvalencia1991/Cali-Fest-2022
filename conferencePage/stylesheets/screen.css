@@ -3,88 +3,19 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -97,8 +28,7 @@ html {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -107,23 +37,16 @@ table {
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+q, blockquote {
   quotes: none;
 }
-
-q::before,
-q::after,
-blockquote::before,
-blockquote::after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
@@ -132,19 +55,7 @@ a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -152,9 +63,8 @@ summary {
   font-family: 'COCOGOOSE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+  src: local("COCOGOOSE Regular"), url("../../fonts/cocogoose_trial.woff") format("woff");
 }
-
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -167,14 +77,12 @@ body {
 .styleheader {
   background: #dad6d6ca;
 }
-
 .styleheader .navbarstyles {
   background-color: white;
   flex-direction: row;
   display: flex;
   height: 68px;
 }
-
 .styleheader .navbarstyles .Hamburgermenu {
   display: flex;
   flex-direction: row;
@@ -182,15 +90,12 @@ body {
   margin: 10px;
   width: 37px;
 }
-
 .styleheader .navbarstyles .stylelogo1 {
   display: none;
 }
-
 .styleheader .navbarstyles .menunavbar {
   display: none;
 }
-
 .styleheader .navbarstyles .menunavbar2 {
   display: none;
   background: #c6c6c6;
@@ -204,7 +109,6 @@ body {
   color: black;
   font-size: x-large;
 }
-
 .styleheader .navbarstyles .menunavbar2 .styleaboutlink {
   cursor: pointer;
   color: black;
@@ -213,11 +117,9 @@ body {
   animation-delay: 2s;
   text-decoration: none;
 }
-
 .styleheader .navbarstyles .menunavbar2 .styleaboutlink:hover {
   color: #ec5242;
 }
-
 .styleheader .TittleConference {
   display: flex;
   padding: 30px;
@@ -225,24 +127,20 @@ body {
   align-items: flex-start;
   height: 400px;
 }
-
 .styleheader .TittleConference .titleheader1 {
   font-size: 2em;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .titleheader2 {
   font-family: 'COCOGOOSE Regular';
   font-size: 1.8em;
   font-weight: 800;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .titleheader3 {
   font-size: 1.8em;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .introduction {
   padding: 5px;
   font-size: smaller;
@@ -251,14 +149,12 @@ body {
   text-align: justify;
   margin-top: 20px;
 }
-
 .styleheader .TittleConference .tittledate {
   font-weight: bold;
   font-size: 1.8em;
   color: #272a31;
   padding-top: 20px;
 }
-
 .styleheader .TittleConference .tittlesite {
   font-size: small;
   padding-top: 10px;
@@ -272,7 +168,6 @@ body {
   padding: 10px;
   background-color: #272a31;
 }
-
 .mainprogram .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -281,14 +176,12 @@ body {
   padding-bottom: 0;
   color: white;
 }
-
 .mainprogram .line {
   background: #ec5242;
   height: 1px;
   width: 30px;
   margin: 10px;
 }
-
 .mainprogram .wrapper {
   display: grid;
   justify-items: start;
@@ -297,7 +190,6 @@ body {
   gap: 10px;
   padding-top: 2em;
 }
-
 .mainprogram .wrapper .program {
   display: flex;
   flex-direction: row;
@@ -311,21 +203,17 @@ body {
   gap: 1em;
   background: rgba(202, 200, 200, 0.1);
 }
-
 .mainprogram .wrapper .program .stylelogoprograms {
   width: 50px;
 }
-
 .mainprogram .wrapper .program .headprogram {
   color: #ec5242;
   width: 160px;
   text-align: initial;
 }
-
 .mainprogram .wrapper .program .infomationprogram1 {
   display: flex;
 }
-
 .mainprogram .joinSummit {
   background-color: #ec5242;
   padding: 20px;
@@ -337,7 +225,6 @@ body {
   border: #ec5242;
   font-size: unset;
 }
-
 .mainprogram .linkprogram {
   display: none;
 }
@@ -347,7 +234,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .featuredspeakers .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -357,56 +243,46 @@ body {
   align-items: center;
   font-size: medium;
 }
-
 .featuredspeakers .line {
   background: #ec5242;
   height: 1px;
   width: 30px;
 }
-
 .featuredspeakers .wrapper2 #showcontent {
   display: none;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker {
   display: flex;
   flex-direction: row;
   gap: 0.9em;
   padding: 1em;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
   width: 7em;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 3px;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
   color: black;
   font-size: larger;
   font-weight: 700;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
   color: #ec5242;
   font-size: x-small;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
   background: #d3d3d3;
   height: 1px;
   width: 30px;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .topic {
   font-size: x-small;
 }
-
 .featuredspeakers .stylebutton {
   background-color: white;
   padding: 20px;
@@ -421,7 +297,6 @@ body {
   font-size: unset;
   gap: 1em;
 }
-
 .featuredspeakers .stylebutton .stylearrow {
   width: 10px;
 }
@@ -433,7 +308,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .partnership .tittlemainprogram3 {
   display: flex;
   justify-content: center;
@@ -443,13 +317,11 @@ body {
   color: white;
   font-size: x-large;
 }
-
 .partnership .line {
   background: #ec5242;
   height: 1px;
   width: 30px;
 }
-
 .partnership .wrapper3 {
   display: flex;
   justify-content: center;
@@ -457,7 +329,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .partnership .wrapper3 .stylelogpartnership {
   width: 8em;
   float: left;
@@ -472,7 +343,6 @@ body {
   background: #d3d3d3;
   gap: 1em;
 }
-
 .licensestyle .imagestylelicense {
   width: 8em;
 }
@@ -481,7 +351,6 @@ body {
   .styleheader {
     background: #dad6d6ca;
   }
-
   .styleheader .navbarstyles {
     background-color: white;
     display: flex;
@@ -489,34 +358,28 @@ body {
     justify-content: center;
     align-items: center;
   }
-
   .styleheader .navbarstyles .Hamburgermenu {
     display: none;
   }
-
   .styleheader .navbarstyles .headstyle {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: row;
   }
-
   .styleheader .navbarstyles .headstyle .stylelogo1 {
     display: flex;
     width: 140px;
     margin-right: 10em;
   }
-
   .styleheader .navbarstyles .menunavbar {
     display: flex;
     gap: 2em;
     align-items: center;
   }
-
   .styleheader .navbarstyles .menunavbar .closemenu {
     display: none;
   }
-
   .styleheader .navbarstyles .menunavbar .styleaboutlink {
     cursor: pointer;
     color: black;
@@ -525,20 +388,16 @@ body {
     animation-delay: 2s;
     text-decoration: none;
   }
-
   .styleheader .navbarstyles .menunavbar .styleaboutlink:hover {
     color: #ec5242;
   }
-
   .styleheader .navbarstyles .menunavbar2 {
     display: none;
   }
-
   .styleheader .navbarstyles .CCcampain {
     border: 3px solid #ec5242;
     padding: 10px;
   }
-
   .styleheader .TittleConference {
     display: flex;
     padding-left: 20em;
@@ -548,24 +407,20 @@ body {
     gap: 5px;
     height: 35em;
   }
-
   .styleheader .TittleConference .titleheader1 {
     font-size: 2em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .titleheader2 {
     font-family: 'COCOGOOSE Regular';
     font-size: 4em;
     color: #ec5242;
     width: 800px;
   }
-
   .styleheader .TittleConference .titleheader3 {
     font-size: 4em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .introduction {
     padding: 15px;
     width: 593px;
@@ -574,13 +429,11 @@ body {
     font-size: smaller;
     margin-top: 20px;
   }
-
   .styleheader .TittleConference .tittledate {
     color: #272a31;
     font-size: xx-large;
     margin-top: 10px;
   }
-
   .styleheader .TittleConference .tittlesite {
     font-size: larger;
     padding-top: 10px;
@@ -594,7 +447,6 @@ body {
     background-color: #272a31;
     height: 500px;
   }
-
   .mainprogram .tittlemainprogram {
     display: flex;
     justify-content: center;
@@ -603,13 +455,11 @@ body {
     color: white;
     font-size: x-large;
   }
-
   .mainprogram .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .mainprogram .wrapper {
     display: flex;
     place-items: center;
@@ -622,7 +472,6 @@ body {
     margin-left: 15em;
     margin-right: 15em;
   }
-
   .mainprogram .wrapper .program {
     display: flex;
     flex-direction: column;
@@ -636,25 +485,20 @@ body {
     gap: 5px;
     background: rgba(202, 200, 200, 0.1);
   }
-
   .mainprogram .wrapper .program .stylelogoprograms {
     width: 50px;
   }
-
   .mainprogram .wrapper .program .headprogram {
     text-align: center;
     color: #ec5242;
     width: 160px;
   }
-
   .mainprogram .wrapper .program .infomationprogram1 {
     text-align: center;
   }
-
   .mainprogram .joinSummit {
     display: none;
   }
-
   .mainprogram .linkprogram {
     color: white;
     text-decoration: underline;
@@ -666,7 +510,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
   .featuredspeakers .tittlemainprogram {
     display: flex;
     justify-content: center;
@@ -676,13 +519,11 @@ body {
     font-size: x-large;
     align-items: center;
   }
-
   .featuredspeakers .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .featuredspeakers .wrapper2 {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -690,45 +531,37 @@ body {
     justify-items: center;
     gap: 1em;
   }
-
   .featuredspeakers .wrapper2 #showcontent {
     display: none;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker {
     display: flex;
     flex-direction: row;
     gap: 0.9em;
     padding: 1em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
     width: 7em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
     color: black;
     font-size: larger;
     font-weight: 700;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
     color: #ec5242;
     font-size: x-small;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
     background: #d3d3d3;
     height: 1px;
     width: 30px;
   }
-
   .featuredspeakers .stylebutton {
     background-color: white;
     padding: 20px;
@@ -743,7 +576,6 @@ body {
     font-size: unset;
     gap: 1em;
   }
-
   .featuredspeakers .stylebutton .stylearrow {
     width: 10px;
   }
@@ -757,7 +589,6 @@ body {
     align-items: center;
     gap: 10px;
   }
-
   .partnership .tittlemainprogram3 {
     display: flex;
     justify-content: center;
@@ -767,20 +598,17 @@ body {
     color: white;
     font-size: x-large;
   }
-
   .partnership .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .partnership .wrapper3 {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 10px;
   }
-
   .partnership .wrapper3 .stylelogpartnership {
     width: 10em;
   }
@@ -794,7 +622,6 @@ body {
     gap: 5em;
     background: #d3d3d3;
   }
-
   .licensestyle .imagestylelicense {
     width: 10em;
   }

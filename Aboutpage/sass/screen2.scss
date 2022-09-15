@@ -13,7 +13,7 @@ $desktop:768px;
   font-family: 'COCOGOOSE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+  src: local("COCOGOOSE Regular"), url("../../fonts/cocogoose_trial.woff") format("woff");
 }
 
 .showcontent {
@@ -180,9 +180,8 @@ body {
 
   .infologo {
     text-align: center;
-    padding-top: 1em;
-    display: none;
     padding: 0;
+    display: none;
   }
 
   .infologomobile {
@@ -289,9 +288,6 @@ body {
 
   .imagestylelicense {
     width: 8em;
-  }
-
-  .styleinfo {
   }
 }
 
@@ -502,9 +498,6 @@ body {
       background: #ec5242;
       height: 1px;
       width: 30px;
-    }
-
-    .headsites {
     }
 
     .siteconference {

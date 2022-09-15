@@ -152,7 +152,7 @@ summary {
   font-family: 'COCOGOOSE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+  src: local("COCOGOOSE Regular"), url("../../fonts/cocogoose_trial.woff") format("woff");
 }
 
 .showcontent {
@@ -317,9 +317,8 @@ body {
 
 .logo .infologo {
   text-align: center;
-  padding-top: 1em;
-  display: none;
   padding: 0;
+  display: none;
 }
 
 .logo .infologomobile {
@@ -392,7 +391,6 @@ body {
   flex-direction: column;
   padding: 1em;
   color: white;
-  font-size: x-large;
 }
 
 .partnership .line {

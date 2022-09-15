@@ -14,7 +14,7 @@ $desktop:768px;
   font-family: 'COCOGOOSE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+  src: local("COCOGOOSE Regular"), url("../../fonts/cocogoose_trial.woff") format("woff");
 }
 
 body {
@@ -588,7 +588,6 @@ body {
             height: 1px;
             width: 30px;
           }
-
         }
       }
     }
