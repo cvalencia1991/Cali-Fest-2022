@@ -1,6 +1,6 @@
 function deploymenu() {
   const menubar = document.getElementById('menubar');
-  menubar.style.display = 'flex';
+  menubar.style.display = 'block';
 }
 document.getElementById('deploy-menu').addEventListener('click', deploymenu);
 

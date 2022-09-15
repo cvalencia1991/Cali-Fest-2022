@@ -1,85 +1,21 @@
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,8 +28,7 @@ html {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -102,23 +37,16 @@ table {
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+q, blockquote {
   quotes: none;
 }
-
-q::before,
-q::after,
-blockquote::before,
-blockquote::after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
@@ -127,385 +55,302 @@ a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
-  font-family: "lattoMedium";
-  src: url("../fonts/Lato-Medium.ttf") format("ttf");
+  font-family: 'COCOGOOSE Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("COCOGOOSE Regular"), url("../fonts/cocogoose_trial.woff") format("woff");
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
-/* @include font-face("lattoMedium",font-files('Lato-Medium.ttf')); */
-@font-face {
-  font-family: "CocogooseProItalic";
-  src: url('/fonts/CocogooseProSemilight-trial.ttf?1662992152') format('truetype');
+.showcontent {
+  display: none;
 }
 
-@font-face {
-  font-family: "lattoligth";
-  src: url('/fonts/Lato-Light.ttf?1662992077') format('truetype');
+.styleheader {
+  background: #dad6d6ca;
+}
+.styleheader .navbarstyles {
+  background-color: white;
+  flex-direction: row;
+  display: flex;
+  height: 68px;
+}
+.styleheader .navbarstyles .Hamburgermenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 37px;
+}
+.styleheader .navbarstyles .stylelogo1 {
+  display: none;
+}
+.styleheader .navbarstyles .menunavbar {
+  display: none;
+}
+.styleheader .navbarstyles .menunavbar2 {
+  display: none;
+  background: #c6c6c6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  left: 0px;
+  gap: 1em;
+  flex-direction: column;
+  color: black;
+  font-size: x-large;
+}
+.styleheader .navbarstyles .menunavbar2 .styleaboutlink {
+  cursor: pointer;
+  color: black;
+  animation-name: aboutbutton;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  text-decoration: none;
+}
+.styleheader .navbarstyles .menunavbar2 .styleaboutlink:hover {
+  color: #ec5242;
+}
+.styleheader .TittleConference {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 400px;
+}
+.styleheader .TittleConference .titleheader1 {
+  font-size: 2em;
+  color: #ec5242;
+}
+.styleheader .TittleConference .titleheader2 {
+  font-family: 'COCOGOOSE Regular';
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #ec5242;
+}
+.styleheader .TittleConference .titleheader3 {
+  font-size: 1.8em;
+  color: #ec5242;
+}
+.styleheader .TittleConference .introduction {
+  padding: 5px;
+  font-size: smaller;
+  border: 1px solid white;
+  font-weight: lighter;
+  text-align: justify;
+  margin-top: 20px;
+}
+.styleheader .TittleConference .tittledate {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #272a31;
+  padding-top: 20px;
+}
+.styleheader .TittleConference .tittlesite {
+  font-size: small;
+  padding-top: 10px;
 }
 
-@font-face {
-  font-family: "lattoheavy";
-  src: url('/fonts/Lato-HeavyItalic.ttf?1662992077') format('truetype');
+.mainprogram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #272a31;
+}
+.mainprogram .tittlemainprogram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  padding-bottom: 0;
+  color: white;
+}
+.mainprogram .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+  margin: 10px;
+}
+.mainprogram .wrapper {
+  display: grid;
+  justify-items: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2em;
+}
+.mainprogram .wrapper .program {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: center;
+  gap: 1em;
+  background: rgba(202, 200, 200, 0.1);
+}
+.mainprogram .wrapper .program .stylelogoprograms {
+  width: 50px;
+}
+.mainprogram .wrapper .program .headprogram {
+  color: #ec5242;
+  width: 160px;
+  text-align: initial;
+}
+.mainprogram .wrapper .program .infomationprogram1 {
+  display: flex;
+}
+.mainprogram .joinSummit {
+  background-color: #ec5242;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+  border: #ec5242;
+  font-size: unset;
+}
+.mainprogram .linkprogram {
+  display: none;
 }
 
-/* *{
-  border: 2px solid red !important;
-} */
-@media screen and (max-width: 768px) {
-  .showcontent {
-    display: none !important;
-  }
+.featuredspeakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featuredspeakers .tittlemainprogram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  color: black;
+  align-items: center;
+  font-size: medium;
+}
+.featuredspeakers .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+.featuredspeakers .wrapper2 #showcontent {
+  display: none;
+}
+.featuredspeakers .wrapper2 .cardspeaker {
+  display: flex;
+  flex-direction: row;
+  gap: 0.9em;
+  padding: 1em;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
+  width: 7em;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3px;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
+  color: #ec5242;
+  font-size: x-small;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
+  background: #d3d3d3;
+  height: 1px;
+  width: 30px;
+}
+.featuredspeakers .wrapper2 .cardspeaker .speaker .topic {
+  font-size: x-small;
+}
+.featuredspeakers .stylebutton {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  margin: 1em;
+  width: 368px;
+  justify-content: center;
+  font-size: unset;
+  gap: 1em;
+}
+.featuredspeakers .stylebutton .stylearrow {
+  width: 10px;
+}
 
-  /*   #show2, #card1, #card2, #card3, #card4{
-    display: none !important;
-  } */
-  .styleheader {
-    background: #dad6d6ca;
-  }
+.partnership {
+  display: flex;
+  justify-content: center;
+  background: #272a31;
+  flex-direction: column;
+  align-items: center;
+}
+.partnership .tittlemainprogram3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  padding-bottom: 0;
+  color: white;
+  font-size: x-large;
+}
+.partnership .line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+.partnership .wrapper3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.partnership .wrapper3 .stylelogpartnership {
+  width: 8em;
+  float: left;
+}
 
-  .styleheader .navbarstyles {
-    background-color: white;
-    flex-direction: row;
-    display: flex;
-    height: 68px;
-  }
-
-  .styleheader .navbarstyles .Hamburgermenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 10px;
-    width: 37px;
-  }
-
-  .styleheader .navbarstyles .stylelogo1 {
-    display: none;
-  }
-
-  .styleheader .navbarstyles .menunavbar {
-    display: none;
-    width: 100%;
-    gap: 2em;
-    height: 100%;
-    padding: 2em;
-    left: 0;
-    background: #d6d6d6;
-    color: #ec5242;
-    position: fixed;
-    font-family: "lattoMedium";
-    font-size: x-large;
-  }
-
-  .styleheader .navbarstyles .menunavbar .closemenu {
-    top: 1em;
-    flex-direction: row;
-    right: 1em;
-    position: fixed;
-  }
-
-  .styleheader .navbarstyles .menunavbar li {
-    padding: 1em;
-  }
-
-  .styleheader .navbarstyles .hiddenMobile {
-    display: none;
-  }
-
-  .styleheader .TittleConference {
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 400px;
-  }
-
-  .styleheader .TittleConference .titleheader1 {
-    font-family: "lattoMedium";
-    font-size: 2em;
-    color: #ec5242;
-  }
-
-  .styleheader .TittleConference .titleheader2 {
-    font-family: "CocogooseProItalic";
-    font-size: 1.8em;
-    font-weight: 800;
-    color: #ec5242;
-  }
-
-  .styleheader .TittleConference .titleheader3 {
-    font-family: "lattoMedium";
-    font-size: 1.8em;
-    color: #ec5242;
-  }
-
-  .styleheader .TittleConference .introduction {
-    padding: 5px;
-    font-size: smaller;
-    border: 1px solid white;
-    font-family: 'lattoligth';
-    text-align: justify;
-    margin-top: 20px;
-  }
-
-  .styleheader .TittleConference .tittledate {
-    font-family: "lattoheavy";
-    font-size: 1.8em;
-    color: #272a31;
-    padding-top: 20px;
-  }
-
-  .styleheader .TittleConference .tittlesite {
-    font-family: "lattoligth";
-    font-size: small;
-    padding-top: 10px;
-  }
-
-  .mainprogram {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #272a31;
-  }
-
-  .mainprogram .tittlemainprogram {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 1em;
-    padding-bottom: 0;
-    color: white;
-  }
-
-  .mainprogram .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-    margin: 10px;
-  }
-
-  .mainprogram .wrapper {
-    display: grid;
-    justify-items: start;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .mainprogram .wrapper .program {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    padding: 10px;
-    border: 1px solid white;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    align-content: center;
-    gap: 1em;
-    background: rgba(202, 200, 200, 0.1);
-  }
-
-  .mainprogram .wrapper .program .stylelogoprograms {
-    width: 50px;
-  }
-
-  .mainprogram .wrapper .program .headprogram {
-    color: #ec5242;
-    width: 160px;
-    text-align: initial;
-  }
-
-  .mainprogram .wrapper .program .infomationprogram1 {
-    display: flex;
-  }
-
-  .mainprogram .joinSummit {
-    background-color: #ec5242;
-    padding: 20px;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 2em;
-    border: #ec5242;
-    font-family: "lattoligth";
-    font-size: unset;
-  }
-
-  .mainprogram .linkprogram {
-    display: none;
-  }
-
-  .featuredspeakers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .featuredspeakers .tittlemainprogram {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 1em;
-    color: black;
-    align-items: center;
-    font-size: medium;
-  }
-
-  .featuredspeakers .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
-  .featuredspeakers .wrapper2 #showcontent {
-    display: none;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker {
-    display: flex;
-    flex-direction: row;
-    gap: 0.9em;
-    padding: 1em;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
-    width: 7em;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 3px;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
-    font-family: "lattoMedium";
-    color: black;
-    font-size: larger;
-    font-weight: 700;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
-    font-family: "lattoMedium";
-    color: #ec5242;
-    font-size: x-small;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
-    background: #d3d3d3;
-    height: 1px;
-    width: 30px;
-  }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker .topic {
-    font-family: "lattoMedium";
-    font-size: x-small;
-  }
-
-  .featuredspeakers .stylebutton {
-    background-color: white;
-    padding: 20px;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #d3d3d3;
-    margin: 1em;
-    width: 368px;
-    font-family: "lattoligth";
-    justify-content: center;
-    font-size: unset;
-    gap: 1em;
-  }
-
-  .featuredspeakers .stylebutton .stylearrow {
-    width: 10px;
-  }
-
-  .partnership {
-    display: flex;
-    justify-content: center;
-    background: #272a31;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .partnership .tittlemainprogram3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "lattoMedium";
-    padding: 1em;
-    padding-bottom: 0;
-    color: white;
-    font-size: x-large;
-  }
-
-  .partnership .line {
-    background: #ec5242;
-    height: 1px;
-    width: 30px;
-  }
-
-  .partnership .wrapper3 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .partnership .wrapper3 .stylelogpartnership {
-    width: 8em;
-    float: left;
-  }
-
-  .licensestyle {
-    display: flex;
-    flex-direction: row;
-    height: 5em;
-    align-items: center;
-    justify-content: space-evenly;
-    background: #d3d3d3;
-    gap: 1em;
-  }
-
-  .licensestyle .imagestylelicense {
-    width: 8em;
-  }
-
-  .licensestyle .styleinfo {
-    font-family: "lattoMedium";
-  }
+.licensestyle {
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #d3d3d3;
+  gap: 1em;
+}
+.licensestyle .imagestylelicense {
+  width: 8em;
 }
 
 @media screen and (min-width: 768px) {
   .styleheader {
     background: #dad6d6ca;
   }
-
   .styleheader .navbarstyles {
     background-color: white;
     display: flex;
@@ -513,36 +358,28 @@ summary {
     justify-content: center;
     align-items: center;
   }
-
   .styleheader .navbarstyles .Hamburgermenu {
     display: none;
   }
-
   .styleheader .navbarstyles .headstyle {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
   }
-
   .styleheader .navbarstyles .headstyle .stylelogo1 {
+    display: flex;
     width: 140px;
     margin-right: 10em;
-    margin-left: 10em;
   }
-
   .styleheader .navbarstyles .menunavbar {
-    list-style: none;
-    color: #272a31;
     display: flex;
-    justify-content: space-evenly;
+    gap: 2em;
     align-items: center;
-    flex-direction: row;
-    gap: 3em;
-    font-family: 'lattoMedium';
   }
-
   .styleheader .navbarstyles .menunavbar .closemenu {
     display: none;
   }
-
   .styleheader .navbarstyles .menunavbar .styleaboutlink {
     cursor: pointer;
     color: black;
@@ -550,20 +387,16 @@ summary {
     animation-duration: 3s;
     animation-delay: 2s;
   }
-
   .styleheader .navbarstyles .menunavbar .styleaboutlink:hover {
     color: #ec5242;
   }
-
-  .styleheader .navbarstyles .hiddenDesktop {
+  .styleheader .navbarstyles .menunavbar2 {
     display: none;
   }
-
   .styleheader .navbarstyles .CCcampain {
-    border: 2px solid #ec5242;
+    border: 3px solid #ec5242;
     padding: 10px;
   }
-
   .styleheader .TittleConference {
     display: flex;
     padding-left: 20em;
@@ -573,45 +406,34 @@ summary {
     gap: 5px;
     height: 35em;
   }
-
   .styleheader .TittleConference .titleheader1 {
-    font-family: "lattoMedium";
     font-size: 2em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .titleheader2 {
-    font-family: "CocogooseProItalic";
+    font-family: 'COCOGOOSE Regular';
     font-size: 4em;
     color: #ec5242;
     width: 800px;
   }
-
   .styleheader .TittleConference .titleheader3 {
-    font-family: "lattoMedium";
     font-size: 4em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .introduction {
     padding: 15px;
     width: 593px;
-    font-family: "lattoligth";
     border: 1px solid white;
     text-align: inherit;
     font-size: smaller;
     margin-top: 20px;
   }
-
   .styleheader .TittleConference .tittledate {
-    font-family: "lattoheavy";
     color: #272a31;
     font-size: xx-large;
     margin-top: 10px;
   }
-
   .styleheader .TittleConference .tittlesite {
-    font-family: "lattoligth";
     font-size: larger;
     padding-top: 10px;
   }
@@ -624,36 +446,31 @@ summary {
     background-color: #272a31;
     height: 500px;
   }
-
   .mainprogram .tittlemainprogram {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 1em;
     color: white;
     font-size: x-large;
   }
-
   .mainprogram .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .mainprogram .wrapper {
     display: flex;
     place-items: center;
     flex-direction: row;
     gap: 1px;
-    padding-top: 6em;
+    padding-top: 2em;
     align-items: stretch;
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-left: 15em;
     margin-right: 15em;
   }
-
   .mainprogram .wrapper .program {
     display: flex;
     flex-direction: column;
@@ -667,28 +484,22 @@ summary {
     gap: 5px;
     background: rgba(202, 200, 200, 0.1);
   }
-
   .mainprogram .wrapper .program .stylelogoprograms {
     width: 50px;
   }
-
   .mainprogram .wrapper .program .headprogram {
     text-align: center;
     color: #ec5242;
     width: 160px;
   }
-
   .mainprogram .wrapper .program .infomationprogram1 {
     text-align: center;
   }
-
   .mainprogram .joinSummit {
     display: none;
   }
-
   .mainprogram .linkprogram {
     color: white;
-    font-family: "lattoligth";
     text-decoration: underline;
     padding: 3em;
   }
@@ -698,24 +509,20 @@ summary {
     flex-direction: column;
     align-items: center;
   }
-
   .featuredspeakers .tittlemainprogram {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 1em;
     color: black;
     font-size: x-large;
     align-items: center;
   }
-
   .featuredspeakers .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .featuredspeakers .wrapper2 {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -723,51 +530,37 @@ summary {
     justify-items: center;
     gap: 1em;
   }
-
   .featuredspeakers .wrapper2 #showcontent {
     display: none;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker {
     display: flex;
     flex-direction: row;
     gap: 0.9em;
     padding: 1em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
     width: 7em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
-    font-family: "lattoMedium";
     color: black;
     font-size: larger;
     font-weight: 700;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
-    font-family: "lattoMedium";
     color: #ec5242;
     font-size: x-small;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
     background: #d3d3d3;
     height: 1px;
     width: 30px;
   }
-
-  .featuredspeakers .wrapper2 .cardspeaker .speaker .topic {
-    font-family: "lattoMedium";
-  }
-
   .featuredspeakers .stylebutton {
     background-color: white;
     padding: 20px;
@@ -778,12 +571,10 @@ summary {
     border: 1px solid #d3d3d3;
     margin: 1em;
     width: 368px;
-    font-family: "lattoligth";
     justify-content: center;
     font-size: unset;
     gap: 1em;
   }
-
   .featuredspeakers .stylebutton .stylearrow {
     width: 10px;
   }
@@ -795,32 +586,28 @@ summary {
     height: 200px;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
-
   .partnership .tittlemainprogram3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: "lattoMedium";
     padding: 1em;
     padding-bottom: 0;
     color: white;
     font-size: x-large;
   }
-
   .partnership .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .partnership .wrapper3 {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 10px;
   }
-
   .partnership .wrapper3 .stylelogpartnership {
     width: 10em;
   }
@@ -834,7 +621,6 @@ summary {
     gap: 5em;
     background: #d3d3d3;
   }
-
   .licensestyle .imagestylelicense {
     width: 10em;
   }
