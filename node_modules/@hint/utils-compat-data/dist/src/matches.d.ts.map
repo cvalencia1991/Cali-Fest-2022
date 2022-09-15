@@ -1,0 +1,1 @@
+{"version":3,"file":"matches.d.ts","sourceRoot":"","sources":["../../src/matches.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,gCAAgC,CAAC;AAEjE,MAAM,WAAW,uBAAwB,SAAQ,eAAe;IAC5D,OAAO,CAAC,EAAE,aAAa,CAAC;CAC3B;AAED,MAAM,WAAW,aAAa;IAC1B,QAAQ,CAAC,EAAE,MAAM,EAAE,CAAC;IACpB,WAAW,CAAC,EAAE,MAAM,CAAC;IACrB,WAAW,CAAC,EAAE,MAAM,CAAC;CACxB"}
