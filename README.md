@@ -10,7 +10,7 @@ First Conference stablish in coding. Original design idea by Cindy Shin in Behan
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://cvalencia1991.github.io/Conferenece-Web-Page/)
 
 
 ## Getting Started
@@ -20,19 +20,6 @@ First Conference stablish in coding. Original design idea by Cindy Shin in Behan
 
 
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-
-### Deployment
 
 
 ## Authors
