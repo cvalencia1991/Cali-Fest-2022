@@ -1,30 +1,31 @@
 # Coference-Page
-First Conference stablish in coding. Original design idea by Cindy Shin in Behance.
+First Cali fest Web Page Conference designe by Cesar Valencia, this structure is  presente in 2020
 
 ## Built With
 
 - HTML
+- SCSS
 - CSS
 - Javascript
 - Boostrap
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://cvalencia1991.github.io/Conferenece-Web-Page/)
+[Video Design] (
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
+if you want this project, follow the next intruccions:
 To get a local copy up and running follow these simple example steps.
 
+ - go to the code the repository Conference-Web-Page
+ - Copy the next link https://github.com/cvalencia1991/Conferenece-Web-Page.git
+ - Use Git to clone the repository on the file you want to put it 
 
-## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
 - Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
