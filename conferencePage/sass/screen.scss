@@ -145,6 +145,7 @@ body {
     height: 1px;
     width: 30px;
     margin: 10px;
+    margin: 1em;
   }
 
   .wrapper {
@@ -160,13 +161,17 @@ body {
       flex-direction: row;
       color: white;
       padding: 10px;
-      border: 1px solid white;
+      border: none;
       align-items: center;
       justify-content: space-evenly;
       flex-wrap: nowrap;
       align-content: center;
       gap: 1em;
       background: rgba(202, 200, 200, 0.1);
+
+      &:hover {
+        border: 1px solid white;
+      }
 
       .stylelogoprograms {
         width: 50px;
@@ -504,7 +509,7 @@ body {
         flex-direction: column;
         color: white;
         padding: 10px;
-        border: 1px solid white;
+        border: none;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: nowrap;
@@ -514,7 +519,7 @@ body {
         background: rgba(202, 200, 200, 0.1);
 
         &:hover {
-          border: 1px solid #ec5242;
+          border: 1px solid white;
         }
 
         .stylelogoprograms {

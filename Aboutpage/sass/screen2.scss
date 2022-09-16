@@ -138,6 +138,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
   }
 }
 
@@ -154,16 +155,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 18px;
+    padding-top: 1em;
     color: black;
     font-size: x-large;
     text-align: center;
   }
 
   .infologo {
-    text-align: center;
     display: none;
-    padding: 5px;
   }
 
   .infologomobile {
@@ -194,10 +193,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1em;
     color: black;
     font-size: x-large;
     align-items: center;
+    padding-top: 1em;
   }
 
   .headsites {
@@ -338,11 +337,11 @@ body {
       padding: 1em;
       background: white;
       border: 1px solid #c6c6c6;
-      margin-top: 20px;
       font-size: unset;
       text-align: center;
       display: flex;
       align-items: center;
+      margin: 2% 20%;
     }
 
     .closemenu {
@@ -353,19 +352,31 @@ body {
   .hiddenDesktop {
     display: none;
   }
-}
 
-.separationinformation {
-  display: none;
-}
+  .separationinformation {
+    display: none;
+  }
 
-.tittledate {
-  color: #272a31;
-  font-size: xx-large;
-  margin-top: 10px;
-}
+  .tittledate {
+    color: #272a31;
+    font-size: xx-large;
+    margin-top: 10px;
+  }
 
-.tittlesite {
-  font-size: larger;
-  padding-top: 10px;
+  .tittlesite {
+    font-size: larger;
+    padding-top: 10px;
+  }
+
+  .logo {
+    .infologomobile {
+      display: none;
+    }
+
+    .infologo {
+      text-align: center;
+      display: flex;
+      padding: 5px;
+    }
+  }
 }

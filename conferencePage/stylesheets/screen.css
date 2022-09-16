@@ -299,13 +299,17 @@ body {
   flex-direction: row;
   color: white;
   padding: 10px;
-  border: 1px solid white;
+  border: none;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   align-content: center;
   gap: 1em;
   background: rgba(202, 200, 200, 0.1);
+}
+
+.mainprogram .wrapper .program:hover {
+  border: 1px solid white;
 }
 
 .mainprogram .wrapper .program .stylelogoprograms {
@@ -639,7 +643,7 @@ body {
     flex-direction: column;
     color: white;
     padding: 10px;
-    border: 1px solid white;
+    border: none;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: nowrap;
@@ -650,7 +654,7 @@ body {
   }
 
   .mainprogram .wrapper .program:hover {
-    border: 1px solid #ec5242;
+    border: 1px solid white;
   }
 
   .mainprogram .wrapper .program .stylelogoprograms {
