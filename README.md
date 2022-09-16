@@ -12,7 +12,7 @@ First Cali fest Web Page Conference designe by Cesar Valencia, this structure is
 ## Live Demo
 
 - [Live Demo Link](https://cvalencia1991.github.io/Conferenece-Web-Page/)
-- [Video Design] ( )
+- [Video Design](https://www.loom.com/share/eec7ec25fff541ba80fcdaf683bcbb0f)
 
 
 ## Getting Started
@@ -26,6 +26,8 @@ To get a local copy up and running follow these simple example steps.
 
 
 👤 **Author**
+
+Cesar Alberto valencia
 
 - GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
 - Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
@@ -43,9 +45,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Cindy Shin
 
 ## 📝 License
 
