@@ -1,0 +1,365 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/font-face";
+
+$desktop:768px;
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbarstyles {
+  display: none;
+
+  .linkmain {
+    display: none;
+  }
+}
+
+.line {
+  background: #ec5242;
+  height: 1px;
+  width: 30px;
+}
+
+.home {
+  .Hamburgermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    width: 37px;
+  }
+
+  .stylelogo1 {
+    display: none;
+  }
+
+  .menunavbar {
+    display: none;
+  }
+
+  .menunavbar2 {
+    background: #c6c6c6;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    left: 0;
+    top: 0;
+    gap: 1em;
+    flex-direction: column;
+    color: black;
+    font-size: x-large;
+
+    .styleaboutlink {
+      cursor: pointer;
+      color: black;
+      animation-name: aboutbutton;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      text-decoration: none;
+
+      &:hover {
+        color: #ec5242;
+      }
+    }
+  }
+}
+
+.hiddenMobile {
+  display: none;
+}
+
+.styleheader {
+  background: #dad6d6ca;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  .titleheader1 {
+    font-size: 2em;
+    color: #ec5242;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .titleheader2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #ec5242;
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  .titleheader3 {
+    font-size: 1.8em;
+    color: #ec5242;
+  }
+
+  .introduction {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #c6c6c6;
+    text-align: center;
+    background: white;
+    margin: 2% 20%;
+  }
+
+  .information {
+    font-size: small;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .introductiondesktop {
+    display: none;
+  }
+
+  .linkinfo {
+    color: #272a31;
+    text-decoration: none;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #c6c6c6;
+  gap: 1em;
+
+  .tittlemainprogram {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1em;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .infologo {
+    display: none;
+  }
+
+  .infologomobile {
+    text-align: center;
+    padding-top: 1em;
+    width: 20em;
+  }
+
+  .logostyle {
+    width: 13em;
+    display: flex;
+    border: 2px solid #c6c6c6;
+    margin: 3em;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.Globalsite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  .tittlemainprogram {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: x-large;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .headsites {
+    text-align: center;
+  }
+
+  .siteconference {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+
+    .stylesite {
+      width: 23em;
+    }
+  }
+}
+
+.partnership {
+  display: flex;
+  justify-content: center;
+  background: rgb(39, 42, 49);
+  flex-direction: column;
+  align-items: center;
+
+  .tittlemainprogram3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    color: white;
+  }
+
+  .wrapper3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .stylelogpartnership {
+      width: 8em;
+      float: left;
+    }
+  }
+}
+
+.licensestyle {
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  gap: 1em;
+  padding: 1em;
+
+  .imagestylelicense {
+    width: 8em;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navbarstyles {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2em;
+    padding-right: 24em;
+    color: white;
+
+    .linkmain {
+      display: flex;
+      gap: 1em;
+    }
+  }
+
+  .home {
+    .Hamburgermenu {
+      display: none;
+    }
+
+    .headstyle {
+      display: flex;
+      align-items: center;
+      gap: 3em;
+      flex-direction: row;
+      justify-content: center;
+      height: 4em;
+
+      .stylelogo1 {
+        display: flex;
+        width: 4em;
+        margin-right: 10em;
+      }
+    }
+
+    .menunavbar {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+
+      .closemenu {
+        display: none;
+      }
+
+      .styleaboutlink {
+        cursor: pointer;
+        color: black;
+        animation-name: aboutbutton;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        text-decoration: none;
+
+        &:hover {
+          color: #ec5242;
+        }
+      }
+    }
+
+    .menunavbar2 {
+      display: none;
+    }
+
+    .CCcampain {
+      border: 3px solid #ec5242;
+      padding: 10px;
+    }
+  }
+
+  .hiddenDesktop {
+    display: none;
+  }
+
+  .separationinformation {
+    display: none;
+  }
+
+  .tittledate {
+    color: #272a31;
+    font-size: xx-large;
+    margin-top: 10px;
+  }
+
+  .tittlesite {
+    font-size: larger;
+    padding-top: 10px;
+  }
+
+  .logo {
+    .infologomobile {
+      display: none;
+    }
+
+    .infologo {
+      text-align: center;
+      display: flex;
+      padding: 5px;
+    }
+  }
+
+  .Globalsite {
+    .siteconference {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
