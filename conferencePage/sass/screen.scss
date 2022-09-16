@@ -47,7 +47,7 @@ body {
   .menunavbar2 {
     background: #c6c6c6;
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     padding: 1em;
@@ -475,13 +475,11 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #272a31;
-    height: 24em;
 
     .tittlemainprogram {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 1em;
       color: white;
       font-size: x-large;
     }
@@ -546,6 +544,7 @@ body {
       color: white;
       text-decoration: underline;
       padding: 3em;
+      display: flex;
     }
   }
 
@@ -559,7 +558,6 @@ body {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 1em;
       color: black;
       font-size: x-large;
       align-items: center;
@@ -573,10 +571,10 @@ body {
 
     .wrapper2 {
       display: grid;
-      grid-template-columns: 30% 30%;
+      grid-template-columns: 50% 50%;
       justify-content: center;
-      justify-items: center;
       gap: 1em;
+      justify-items: end;
 
       #showcontent {
         display: none;
@@ -587,6 +585,7 @@ body {
         flex-direction: row;
         gap: 0.9em;
         padding: 1em;
+        width: 22em;
 
         .speakerstyle {
           width: 7em;
@@ -642,10 +641,8 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(39, 42, 49);
-    height: 200px;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 
     .tittlemainprogram3 {
       display: flex;
@@ -661,6 +658,7 @@ body {
       background: #ec5242;
       height: 1px;
       width: 30px;
+      margin: 10px;
     }
 
     .wrapper3 {

@@ -37,45 +37,40 @@ body {
     width: 37px;
   }
 
-  .headstyle {
-    .menunavbar {
-      display: none;
-    }
-
-    .menunavbar2 {
-      background: #c6c6c6;
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      padding: 1em;
-      left: 0;
-      top: 0;
-      flex-direction: column;
-      color: black;
-      font-size: x-large;
-
-      .styleaboutlink {
-        cursor: pointer;
-        color: black;
-        animation-name: aboutbutton;
-        animation-duration: 3s;
-        animation-delay: 2s;
-        text-decoration: none;
-
-        &:hover {
-          color: #ec5242;
-        }
-      }
-    }
-  }
-
   .stylelogo1 {
     display: none;
   }
 
-  li {
+  .menunavbar {
+    display: none;
+  }
+
+  .menunavbar2 {
+    background: #c6c6c6;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     padding: 1em;
+    left: 0;
+    top: 0;
+    gap: 1em;
+    flex-direction: column;
+    color: black;
+    font-size: x-large;
+
+    .styleaboutlink {
+      cursor: pointer;
+      color: black;
+      animation-name: aboutbutton;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      text-decoration: none;
+
+      &:hover {
+        color: #ec5242;
+      }
+    }
   }
 }
 
@@ -117,8 +112,8 @@ body {
     font-size: 1em;
     border: 1px solid #c6c6c6;
     text-align: center;
-    margin-top: 20px;
     background: white;
+    margin: 2% 20%;
   }
 
   .information {
@@ -268,7 +263,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 2em;
-    padding-right: 20em;
+    padding-right: 24em;
     color: white;
 
     .linkmain {
@@ -285,32 +280,27 @@ body {
     .headstyle {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 3em;
       flex-direction: row;
+      justify-content: center;
+      height: 4em;
 
       .stylelogo1 {
         display: flex;
         width: 4em;
         margin-right: 10em;
-        margin-left: 10em;
-      }
-
-      .menunavbar {
-        list-style: none;
-        color: #272a31;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-
-        .CCcampain {
-          border: 2px solid #ec5242;
-          padding: 10px;
-        }
       }
     }
 
-    .menunavbar2 {
+    .menunavbar {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+
+      .closemenu {
+        display: none;
+      }
+
       .styleaboutlink {
         cursor: pointer;
         color: black;
@@ -324,28 +314,14 @@ body {
         }
       }
     }
-  }
 
-  .styleheader {
-    background: #dad6d6ca;
-
-    .introduction {
+    .menunavbar2 {
       display: none;
     }
 
-    .introductiondesktop {
-      padding: 1em;
-      background: white;
-      border: 1px solid #c6c6c6;
-      font-size: unset;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      margin: 2% 20%;
-    }
-
-    .closemenu {
-      display: none;
+    .CCcampain {
+      border: 3px solid #ec5242;
+      padding: 10px;
     }
   }
 
@@ -377,6 +353,13 @@ body {
       text-align: center;
       display: flex;
       padding: 5px;
+    }
+  }
+
+  .Globalsite {
+    .siteconference {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
