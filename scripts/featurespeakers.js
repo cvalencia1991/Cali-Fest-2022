@@ -48,7 +48,7 @@ function speakersection() {
     const cardSpekaker = ` <div class="cardspeaker">
         <img class="speakerstyle" src="${imageSpeaker}" alt="">
         <div class="speaker">
-            <h5 class="namespeaker"><b>${speakerp}</b></h5>
+            <h5 class="namespeaker">${speakerp}</h5>
             <div class="studyies">${studies}</div>
             <div class="line2"></div>
             <div class="topic">${topic}</div>

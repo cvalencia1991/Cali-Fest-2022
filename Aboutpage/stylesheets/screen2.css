@@ -4,88 +4,19 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,8 +29,7 @@ html {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -108,23 +38,16 @@ table {
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+q, blockquote {
   quotes: none;
 }
-
-q::before,
-q::after,
-blockquote::before,
-blockquote::after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
@@ -133,19 +56,7 @@ a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -156,7 +67,6 @@ body {
 .navbarstyles {
   display: none;
 }
-
 .navbarstyles .linkmain {
   display: none;
 }
@@ -174,15 +84,12 @@ body {
   margin: 10px;
   width: 37px;
 }
-
 .home .stylelogo1 {
   display: none;
 }
-
 .home .menunavbar {
   display: none;
 }
-
 .home .menunavbar2 {
   background: #c6c6c6;
   display: none;
@@ -197,7 +104,6 @@ body {
   color: black;
   font-size: x-large;
 }
-
 .home .menunavbar2 .styleaboutlink {
   cursor: pointer;
   color: black;
@@ -206,7 +112,6 @@ body {
   animation-delay: 2s;
   text-decoration: none;
 }
-
 .home .menunavbar2 .styleaboutlink:hover {
   color: #ec5242;
 }
@@ -223,7 +128,6 @@ body {
   align-items: center;
   gap: 1em;
 }
-
 .styleheader .titleheader1 {
   font-size: 2em;
   color: #ec5242;
@@ -231,7 +135,6 @@ body {
   align-items: center;
   display: flex;
 }
-
 .styleheader .titleheader2 {
   font-size: 1.8em;
   font-weight: 800;
@@ -239,12 +142,10 @@ body {
   text-align: center;
   font-family: 'COCOGOOSE', sans-serif;
 }
-
 .styleheader .titleheader3 {
   font-size: 1.8em;
   color: #ec5242;
 }
-
 .styleheader .introduction {
   padding: 5px;
   font-size: 1em;
@@ -253,17 +154,14 @@ body {
   background: white;
   margin: 2% 20%;
 }
-
 .styleheader .information {
   font-size: small;
   padding-top: 10px;
   text-align: center;
 }
-
 .styleheader .introductiondesktop {
   display: none;
 }
-
 .styleheader .linkinfo {
   color: #272a31;
   text-decoration: none;
@@ -283,7 +181,6 @@ body {
   border: 1px solid #c6c6c6;
   gap: 1em;
 }
-
 .logo .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -293,17 +190,14 @@ body {
   font-size: x-large;
   text-align: center;
 }
-
 .logo .infologo {
   display: none;
 }
-
 .logo .infologomobile {
   text-align: center;
   padding-top: 1em;
   width: 20em;
 }
-
 .logo .logostyle {
   width: 13em;
   display: flex;
@@ -321,7 +215,6 @@ body {
   align-items: center;
   gap: 1em;
 }
-
 .Globalsite .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -331,11 +224,9 @@ body {
   align-items: center;
   padding-top: 1em;
 }
-
 .Globalsite .headsites {
   text-align: center;
 }
-
 .Globalsite .siteconference {
   display: flex;
   flex-direction: column;
@@ -343,7 +234,6 @@ body {
   margin-top: 2em;
   margin-bottom: 5em;
 }
-
 .Globalsite .siteconference .stylesite {
   width: 23em;
 }
@@ -355,7 +245,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .partnership .tittlemainprogram3 {
   display: flex;
   justify-content: center;
@@ -363,7 +252,6 @@ body {
   padding: 1em;
   color: white;
 }
-
 .partnership .wrapper3 {
   display: flex;
   justify-content: center;
@@ -371,7 +259,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .partnership .wrapper3 .stylelogpartnership {
   width: 8em;
   float: left;
@@ -387,7 +274,6 @@ body {
   gap: 1em;
   padding: 1em;
 }
-
 .licensestyle .imagestylelicense {
   width: 8em;
 }
@@ -403,7 +289,6 @@ body {
     padding-right: 24em;
     color: white;
   }
-
   .navbarstyles .linkmain {
     display: flex;
     gap: 1em;
@@ -412,7 +297,6 @@ body {
   .home .Hamburgermenu {
     display: none;
   }
-
   .home .headstyle {
     display: flex;
     align-items: center;
@@ -421,23 +305,19 @@ body {
     justify-content: center;
     height: 4em;
   }
-
   .home .headstyle .stylelogo1 {
     display: flex;
     width: 4em;
     margin-right: 10em;
   }
-
   .home .menunavbar {
     display: flex;
     gap: 2em;
     align-items: center;
   }
-
   .home .menunavbar .closemenu {
     display: none;
   }
-
   .home .menunavbar .styleaboutlink {
     cursor: pointer;
     color: black;
@@ -446,42 +326,17 @@ body {
     animation-delay: 2s;
     text-decoration: none;
   }
-
   .home .menunavbar .styleaboutlink:hover {
     color: #ec5242;
   }
-
   .home .menunavbar2 {
     display: none;
   }
-
   .home .CCcampain {
     border: 3px solid #ec5242;
     padding: 10px;
   }
 
-  /*   .styleheader {
-    background: #dad6d6ca;
-
-    .introduction {
-      display: none;
-    }
-
-    .introductiondesktop {
-      padding: 1em;
-      background: white;
-      border: 1px solid #c6c6c6;
-      font-size: unset;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      margin: 2% 20%;
-    }
-
-    .closemenu {
-      display: none;
-    }
-  } */
   .hiddenDesktop {
     display: none;
   }
@@ -504,7 +359,6 @@ body {
   .logo .infologomobile {
     display: none;
   }
-
   .logo .infologo {
     text-align: center;
     display: flex;

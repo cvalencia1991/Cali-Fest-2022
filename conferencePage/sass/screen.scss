@@ -14,6 +14,10 @@ $desktop:768px;
   display: none;
 }
 
+*{
+  border:2px solid red !important;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -34,6 +38,9 @@ body {
     justify-content: flex-start;
     margin: 10px;
     width: 37px;
+  }
+  .headstyle{
+    display: none;
   }
 
   .stylelogo1 {
@@ -154,7 +161,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding-top: 2em;
 
     .program {
       display: flex;
@@ -298,6 +304,7 @@ body {
   background: rgb(39, 42, 49);
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 
   .tittlemainprogram3 {
     display: flex;
@@ -438,7 +445,6 @@ body {
         font-family: 'COCOGOOSE', sans-serif;
         font-size: 4em;
         color: #ec5242;
-        width: 800px;
       }
 
       .titleheader3 {
@@ -448,7 +454,6 @@ body {
 
       .introduction {
         padding: 15px;
-        width: 593px;
         border: 1px solid white;
         text-align: inherit;
         font-size: smaller;
@@ -494,12 +499,9 @@ body {
       display: flex;
       place-items: center;
       flex-direction: row;
-      padding-top: 2em;
       align-items: stretch;
       justify-content: flex-start;
       flex-wrap: nowrap;
-      margin-left: 15em;
-      margin-right: 15em;
       gap: 1em;
 
       .program {
@@ -527,7 +529,6 @@ body {
         .headprogram {
           text-align: center;
           color: rgb(236, 82, 66);
-          width: 160px;
         }
 
         .infomationprogram1 {
@@ -573,8 +574,6 @@ body {
       display: grid;
       grid-template-columns: 50% 50%;
       justify-content: center;
-      gap: 1em;
-      justify-items: end;
 
       #showcontent {
         display: none;
