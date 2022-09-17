@@ -64,10 +64,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-* {
-  border: 2px solid red !important;
-}
-
+/* *{
+  border: 1px solid red !important;
+} */
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -97,18 +96,7 @@ body {
   display: none;
 }
 .home .menunavbar2 {
-  background: #c6c6c6;
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  padding: 1em;
-  left: 0;
-  top: 0;
-  gap: 1em;
-  flex-direction: column;
-  color: black;
-  font-size: x-large;
+  display: flex;
 }
 .home .menunavbar2 .styleaboutlink {
   cursor: pointer;
@@ -130,7 +118,6 @@ body {
   padding: 30px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1em;
 }
 .styleheader .TittleConference .titleheader1 {
   font-size: 2em;
@@ -177,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 1em;
+  margin-top: 1em;
   padding-bottom: 0;
   color: white;
 }
@@ -413,7 +400,18 @@ body {
     color: #ec5242;
   }
   .home .menunavbar2 {
+    background: #c6c6c6;
     display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    left: 0;
+    top: 0;
+    gap: 1em;
+    flex-direction: column;
+    color: black;
+    font-size: x-large;
   }
   .home .CCcampain {
     border: 3px solid #ec5242;
@@ -501,6 +499,7 @@ body {
     flex-wrap: nowrap;
     align-content: center;
     cursor: pointer;
+    width: 8em;
     gap: 5px;
     background: rgba(202, 200, 200, 0.1);
   }
