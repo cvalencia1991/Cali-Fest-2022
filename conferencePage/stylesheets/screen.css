@@ -193,6 +193,7 @@ body {
   flex-wrap: nowrap;
   align-content: center;
   gap: 1em;
+  width: 40vh;
   background: rgba(202, 200, 200, 0.1);
 }
 .mainprogram .wrapper .program:hover {

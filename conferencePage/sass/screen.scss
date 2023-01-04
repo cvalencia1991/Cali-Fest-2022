@@ -153,6 +153,7 @@ body {
     .program {
       display: flex;
       flex-direction: row;
+
       color: white;
       padding: 10px;
       border: none;
@@ -160,8 +161,8 @@ body {
       justify-content: space-evenly;
       flex-wrap: nowrap;
       align-content: center;
-      
       gap: 1em;
+      width: 40vh;
       background: rgba(202, 200, 200, 0.1);
 
       &:hover {
