@@ -39,7 +39,8 @@ body {
     margin: 10px;
     width: 37px;
   }
-  .headstyle{
+
+  .headstyle {
     display: none;
   }
 
@@ -52,7 +53,7 @@ body {
   }
 
   .menunavbar2 {
-   display: flex;
+    display: flex;
 
     .styleaboutlink {
       cursor: pointer;
@@ -153,7 +154,6 @@ body {
     .program {
       display: flex;
       flex-direction: row;
-
       color: white;
       padding: 10px;
       border: none;
