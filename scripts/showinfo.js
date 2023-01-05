@@ -1,8 +1,7 @@
-function deployMenu() {
+document.getElementById('deploy-menu').addEventListener('click', () => {
   const menuBar = document.getElementById('menubar');
-  menuBar.style.display = 'flex';
-}
-document.getElementById('deploy-menu').addEventListener('click', deployMenu);
+  menuBar.style.display = 'block';
+});
 
 function closeMenu() {
   const menuBar = document.getElementById('menubar');
