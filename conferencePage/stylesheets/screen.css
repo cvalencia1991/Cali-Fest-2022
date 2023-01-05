@@ -4,88 +4,19 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,8 +29,7 @@ html {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -108,23 +38,16 @@ table {
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+q, blockquote {
   quotes: none;
 }
-
-q::before,
-q::after,
-blockquote::before,
-blockquote::after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
@@ -133,19 +56,7 @@ a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -164,7 +75,6 @@ body {
 .navbarstyles {
   display: none;
 }
-
 .navbarstyles .linkmain {
   display: none;
 }
@@ -176,23 +86,21 @@ body {
   margin: 10px;
   width: 37px;
 }
-
 .home .headstyle {
   display: none;
 }
-
+.home .headstyle .stylelogo {
+  width: 20px;
+}
 .home .stylelogo1 {
   display: none;
 }
-
 .home .menunavbar {
   display: none;
 }
-
 .home .menunavbar2 {
   display: flex;
 }
-
 .home .menunavbar2 .styleaboutlink {
   cursor: pointer;
   color: black;
@@ -201,7 +109,6 @@ body {
   animation-delay: 2s;
   text-decoration: none;
 }
-
 .home .menunavbar2 .styleaboutlink:hover {
   color: #ec5242;
 }
@@ -209,31 +116,26 @@ body {
 .styleheader {
   background: #dad6d6ca;
 }
-
 .styleheader .TittleConference {
   display: flex;
   padding: 30px;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .styleheader .TittleConference .titleheader1 {
   font-size: 2em;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .titleheader2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.8em;
   font-weight: 800;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .titleheader3 {
   font-size: 1.8em;
   color: #ec5242;
 }
-
 .styleheader .TittleConference .introduction {
   padding: 5px;
   font-size: smaller;
@@ -242,14 +144,12 @@ body {
   text-align: justify;
   margin-top: 20px;
 }
-
 .styleheader .TittleConference .tittledate {
   font-weight: bold;
   font-size: 1.8em;
   color: #272a31;
   padding-top: 20px;
 }
-
 .styleheader .TittleConference .tittlesite {
   font-size: small;
   padding-top: 10px;
@@ -263,7 +163,6 @@ body {
   padding: 10px;
   background-color: #272a31;
 }
-
 .mainprogram .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -272,7 +171,6 @@ body {
   padding-bottom: 0;
   color: white;
 }
-
 .mainprogram .line {
   background: #ec5242;
   height: 1px;
@@ -280,7 +178,6 @@ body {
   margin: 10px;
   margin: 1em;
 }
-
 .mainprogram .wrapper {
   display: grid;
   justify-items: start;
@@ -288,7 +185,6 @@ body {
   align-items: center;
   gap: 10px;
 }
-
 .mainprogram .wrapper .program {
   display: flex;
   flex-direction: row;
@@ -303,24 +199,19 @@ body {
   width: 40vh;
   background: rgba(202, 200, 200, 0.1);
 }
-
 .mainprogram .wrapper .program:hover {
   border: 1px solid white;
 }
-
 .mainprogram .wrapper .program .stylelogoprograms {
   width: 50px;
 }
-
 .mainprogram .wrapper .program .headprogram {
   color: #ec5242;
   text-align: initial;
 }
-
 .mainprogram .wrapper .program .infomationprogram1 {
   display: flex;
 }
-
 .mainprogram .joinSummit {
   background-color: #ec5242;
   padding: 20px;
@@ -332,7 +223,6 @@ body {
   border: #ec5242;
   font-size: unset;
 }
-
 .mainprogram .linkprogram {
   display: none;
 }
@@ -342,7 +232,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .featuredspeakers .tittlemainprogram {
   display: flex;
   justify-content: center;
@@ -352,17 +241,14 @@ body {
   align-items: center;
   font-size: medium;
 }
-
 .featuredspeakers .line {
   background: #ec5242;
   height: 1px;
   width: 30px;
 }
-
 .featuredspeakers .wrapper2 #showcontent {
   display: none;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker {
   display: flex;
   flex-direction: row;
@@ -370,39 +256,32 @@ body {
   padding: 1em;
   width: auto;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
   width: 7em;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 3px;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
   color: black;
   font-size: larger;
   font-weight: 700;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
   color: #ec5242;
   font-size: x-small;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
   background: #d3d3d3;
   height: 1px;
   width: 30px;
 }
-
 .featuredspeakers .wrapper2 .cardspeaker .speaker .topic {
   font-size: x-small;
 }
-
 .featuredspeakers .stylebutton {
   background-color: white;
   padding: 20px;
@@ -417,7 +296,6 @@ body {
   font-size: unset;
   gap: 1em;
 }
-
 .featuredspeakers .stylebutton .stylearrow {
   width: 10px;
 }
@@ -430,7 +308,6 @@ body {
   align-items: center;
   gap: 10px;
 }
-
 .partnership .tittlemainprogram3 {
   display: flex;
   justify-content: center;
@@ -440,13 +317,11 @@ body {
   color: white;
   font-size: x-large;
 }
-
 .partnership .line {
   background: #ec5242;
   height: 1px;
   width: 30px;
 }
-
 .partnership .wrapper3 {
   display: flex;
   justify-content: center;
@@ -454,7 +329,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .partnership .wrapper3 .stylelogpartnership {
   width: 8em;
   float: left;
@@ -470,7 +344,6 @@ body {
   gap: 1em;
   padding: 10px;
 }
-
 .licensestyle .imagestylelicense {
   width: 8em;
 }
@@ -490,7 +363,6 @@ body {
     padding-right: 25em;
     color: white;
   }
-
   .navbarstyles .linkmain {
     display: flex;
     gap: 1em;
@@ -499,32 +371,26 @@ body {
   .home .Hamburgermenu {
     display: none;
   }
-
   .home .headstyle {
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 22em;
     flex-direction: row;
     justify-content: center;
     height: 4em;
   }
-
   .home .headstyle .stylelogo1 {
     display: flex;
     width: 4em;
-    margin-right: 10em;
   }
-
   .home .menunavbar {
     display: flex;
     gap: 2em;
     align-items: center;
   }
-
   .home .menunavbar .closemenu {
     display: none;
   }
-
   .home .menunavbar .styleaboutlink {
     cursor: pointer;
     color: black;
@@ -533,11 +399,9 @@ body {
     animation-delay: 2s;
     text-decoration: none;
   }
-
   .home .menunavbar .styleaboutlink:hover {
     color: #ec5242;
   }
-
   .home .menunavbar2 {
     background: #c6c6c6;
     display: none;
@@ -552,7 +416,6 @@ body {
     color: black;
     font-size: x-large;
   }
-
   .home .CCcampain {
     border: 3px solid #ec5242;
     padding: 10px;
@@ -561,7 +424,6 @@ body {
   .styleheader {
     background: #dad6d6ca;
   }
-
   .styleheader .TittleConference {
     display: flex;
     padding-left: 25em;
@@ -570,23 +432,19 @@ body {
     align-items: flex-start;
     gap: 5px;
   }
-
   .styleheader .TittleConference .titleheader1 {
     font-size: 2em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .titleheader2 {
     font-family: 'COCOGOOSE', sans-serif;
     font-size: 4em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .titleheader3 {
     font-size: 4em;
     color: #ec5242;
   }
-
   .styleheader .TittleConference .introduction {
     padding: 15px;
     border: 1px solid white;
@@ -594,14 +452,12 @@ body {
     font-size: smaller;
     margin-top: 20px;
   }
-
   .styleheader .TittleConference .tittledate {
     color: #272a31;
     font-size: xx-large;
     margin-top: 10px;
     font-weight: bold;
   }
-
   .styleheader .TittleConference .tittlesite {
     font-size: larger;
     padding-top: 10px;
@@ -614,7 +470,6 @@ body {
     align-items: center;
     background-color: #272a31;
   }
-
   .mainprogram .tittlemainprogram {
     display: flex;
     justify-content: center;
@@ -622,13 +477,11 @@ body {
     color: white;
     font-size: x-large;
   }
-
   .mainprogram .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .mainprogram .wrapper {
     display: flex;
     place-items: center;
@@ -638,7 +491,6 @@ body {
     flex-wrap: nowrap;
     gap: 1em;
   }
-
   .mainprogram .wrapper .program {
     display: flex;
     flex-direction: column;
@@ -654,28 +506,22 @@ body {
     gap: 5px;
     background: rgba(202, 200, 200, 0.1);
   }
-
   .mainprogram .wrapper .program:hover {
     border: 1px solid white;
   }
-
   .mainprogram .wrapper .program .stylelogoprograms {
     width: 50px;
   }
-
   .mainprogram .wrapper .program .headprogram {
     text-align: center;
     color: #ec5242;
   }
-
   .mainprogram .wrapper .program .infomationprogram1 {
     text-align: center;
   }
-
   .mainprogram .joinSummit {
     display: none;
   }
-
   .mainprogram .linkprogram {
     color: white;
     text-decoration: underline;
@@ -689,7 +535,6 @@ body {
     align-items: center;
     padding: 1em;
   }
-
   .featuredspeakers .tittlemainprogram {
     display: flex;
     justify-content: center;
@@ -698,23 +543,19 @@ body {
     font-size: x-large;
     align-items: center;
   }
-
   .featuredspeakers .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
   }
-
   .featuredspeakers .wrapper2 {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
   }
-
   .featuredspeakers .wrapper2 #showcontent {
     display: none;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker {
     display: flex;
     flex-direction: row;
@@ -722,35 +563,29 @@ body {
     padding: 1em;
     width: 22em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speakerstyle {
     width: 7em;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 3px;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .namespeaker {
     color: black;
     font-size: larger;
     font-weight: 700;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .studyies {
     color: #ec5242;
     font-size: x-small;
   }
-
   .featuredspeakers .wrapper2 .cardspeaker .speaker .line2 {
     background: #d3d3d3;
     height: 1px;
     width: 30px;
   }
-
   .featuredspeakers .stylebutton {
     background-color: white;
     padding: 20px;
@@ -765,7 +600,6 @@ body {
     font-size: unset;
     gap: 1em;
   }
-
   .featuredspeakers .stylebutton .stylearrow {
     width: 10px;
   }
@@ -777,7 +611,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
   .partnership .tittlemainprogram3 {
     display: flex;
     justify-content: center;
@@ -787,21 +620,18 @@ body {
     color: white;
     font-size: x-large;
   }
-
   .partnership .line {
     background: #ec5242;
     height: 1px;
     width: 30px;
     margin: 10px;
   }
-
   .partnership .wrapper3 {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 10px;
   }
-
   .partnership .wrapper3 .stylelogpartnership {
     width: 10em;
   }
@@ -815,7 +645,6 @@ body {
     gap: 5em;
     background: #d3d3d3;
   }
-
   .licensestyle .imagestylelicense {
     width: 10em;
   }
