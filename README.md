@@ -25,9 +25,9 @@ To get a local copy up and running follow these simple example steps.
  - Use Git to clone the repository on the file you want to put it 
 
 
-👤 **Author**
+👤 **Cesar Alberto valencia**
 
-Cesar Alberto valencia
+
 
 - GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
 - Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
